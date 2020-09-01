@@ -1,0 +1,147 @@
+#tab {
+    width: 100%; padding: 100px 0; overflow: hidden; height: 100vh; 
+    
+    .inner {
+        width: 1180px; margin: 0 auto; 
+
+        h1 {
+            font: bold 24px/1 'Titillium Web', sans-serif; color: #444; margin-bottom: 5px;
+        }
+        span {font: 16px/1 'Titillium Web', sans-serif; color: #444;}
+
+        .wrap {
+            width: 100%; position: relative; height: 100%; margin-top: 50px;
+            
+            >h2 {
+                position: absolute; font: bold 25px/1 'Titillium Web', sans-serif; color: #fff;  z-index: 1;top: 10%; left: 9%; transform: translateX(-50%);
+            }
+
+            .tab_btns {
+                width: 20%; position: absolute; height: 100%; background: #a8c4a7; top: 0; left: 0; box-sizing: border-box; padding-top: 150px;
+
+                li {
+                    width: 100%; height: 50px; box-sizing: border-box;
+
+                    >a {
+                        width: 100%; height: 50px; display: block; font: bold 15px/50px 'Titillium Web', sans-serif; color: #609180; text-indent: 50px;
+
+                        &.on {
+                            color: #004135;
+                        }
+                    }
+                }
+            }
+
+            >div {
+                width: 80%; height: 360px; box-sizing: border-box; margin-left: 20%; padding: 70px; position: relative; display: none; border: 1px solid #a8c4a7;
+
+                >h2 {
+                    font: 5vw/1 'Titillium Web', sans-serif; color: #aaa; transform:translateX(-200px); opacity:0; transition:0.5s; position:relative; z-index:2;
+                }
+
+                a{
+                    display: block; font: 15px/1 'Titillium Web', sans-serif; color: #bbb; margin-top: 30px; opacity: 0; transform: translateX(-180px); transition:0.5s 0.4s;  z-index: 1; text-indent: 7px;
+
+                    &::before {
+                        content:'>> '; 
+                    }
+                }
+
+                >img{
+                    width: 40%; 
+                    position: absolute; right: 30px; bottom: 0; z-index: 1; transform:translateX(200px); opacity:0; transition:0.5s 0.2s;
+                }
+
+                &.on {
+                    display: block;
+
+                    a {transform: translateX(0px); opacity: 1;}
+                    h2 {transform:translateX(0px); opacity:1;}
+                    img {transform:translateX(0px); opacity:1;}
+                }
+            } 
+        }
+
+    }
+}
+
+
+// tablet
+@media screen and (max-width:$tablet) {
+    #tab {
+        height: auto; padding: 80px 0; 
+        .inner {
+            width: 90%; 
+    
+            h1 {
+                font-size: 20px;
+            }
+            span {font-size: 14px;}
+    
+            .wrap {
+                >h2 {
+                    font-size:17px; top: 15%; left: 11%;
+                }
+    
+                .tab_btns {
+                    padding-top: 130px; width: 25%;
+    
+                    li {
+                        width: 100%; height: 50px; box-sizing: border-box;
+    
+                        >a {
+                            font-size: 14px; text-indent: 20px;
+                        }
+                    }
+                }
+    
+                >div {
+                    width: 75%; height: 320px; 
+                } 
+            }
+        }
+    }
+}
+
+
+
+//mobile
+@media screen and (max-width:$mobile) {
+    #tab {
+        padding: 80px 0;
+        .inner {
+            .wrap {
+                width: 100%; position: relative; height: 100%; margin-top: 20px;
+
+                >h2 {
+                    display: none;
+                }
+    
+                .tab_btns {
+                   width: 100%; height: 40px; padding-top: 0px;  z-index: 3;
+    
+                    li {
+                        width: calc(100% / 3); height: 100%; float: left;
+    
+                        >a {
+                            width: 100%; height: 40px; display: block; font: bold 14px/40px 'arial', sans-serif; text-indent: 0px; text-align: center;
+                        }
+                    }
+                }
+    
+                >div {
+                    width: 100%; margin-left: 0; padding: 120px 50px 50px 30px;
+    
+                    h2 {
+                        font-size: 40px;
+                    }
+                    >img{
+                        width: auto; height: 80%;
+                    }
+    
+                } 
+            }
+        }
+    }
+}
+ 

@@ -1,0 +1,247 @@
+/* skip navigation */
+#skip_navi {
+    a {
+        display: block; position: fixed; width: 100%; height: 50px; background: rgb(1, 209, 29); font: bold 16px/50px 'Nanum Gothic', sans-serif;; color: #fff; text-align: center; top: -50px; left: 0; z-index: 200;  
+
+        &.on {
+            top:0;
+        }
+    }
+}
+
+
+#header {
+    width: 100%; height: 80px; border-bottom: 1px solid #ddd; box-sizing: border-box; background: #fff; 
+
+    .bgGnb {
+        position: absolute; width: 100%; height: 160px; background: #fff; left: 0;
+        top: 80px; z-index: 5; border-bottom: 1px solid #ddd; box-sizing: border-box; display: none;
+    }
+
+    .inner {
+        width: 1180px; margin: 0 auto; box-sizing: border-box; padding: 20px; height: 100%; position: relative;
+
+        h1 {
+            position: absolute; left: 2%; top: 50%; transform: translateY(-50%);
+
+            a {
+                font: bold 32px/1 'Titillium Web', sans-serif;; color: #444;
+            }
+        }
+
+        #gnb {
+            position: absolute; right: 0; bottom: 0;
+    
+            //&::after {content:''; display: block; clear: both;}
+
+            >li {
+                display: inline-block; padding: 10px 20px 15px 20px; position: relative;
+
+                a {font: bold 18px/1 'Titillium Web', sans-serif;; color: #666;}
+
+                >ul {
+                    //2depth
+                    position: absolute; top: 45px; left: 50%; transform: translateX(-50%); z-index: 5; display: none; width: 100%; box-sizing: border-box;
+                    >li {
+                        width: 100%;
+                        >a{ 
+                            display: block; font: 15px/40px 'Titillium Web', sans-serif; color: #666; text-align: center; width: 100%;  height: 40px;
+                            // display: block; background: #fff; color: #555; font: 14px/40px 'Barlow', sans-serif; text-align: center; width: 149px; height: 40px;
+
+                            &:hover {
+                                color: darkblue;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .util {
+            position: absolute; right: 0; top: 0;
+
+            li {
+                display: inline-block; padding: 5px 10px;
+                &:last-child {padding-right: 20px;}
+
+                a{font: 12px/1 'arial'; color: #666;}
+            }
+        }
+            
+        .btnCall {
+            position: absolute; right: 2%; top: 50%; transform: translateY(-50%); width: 35px; height: 28px; display: none; z-index: 8;
+
+            span {
+                transition:0.5s;
+                display: block; width: 100%; height: 3px; background:#2d4553; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+
+                &::before {
+                    content:''; position: absolute; width: 100%; top: -12px; left: 0; height: 3px;  background:#2d4553; transition:0.5s;
+                }
+
+                &::after {
+                    content:''; position: absolute; width: 100%; top: 12px; left: 0; height: 3px;  background:#2d4553; transition:0.5s;
+                }
+            }
+
+            &.on {
+                span {
+                    background: transparent;
+                    
+                    &::before {
+                        width: 100%; top: 0; transform: rotate(405deg); background: #2d4553;
+                    }
+                    &::after {
+                        width: 100%; top: 0; transform: rotate(-405deg);background: #2d4553;
+                    }
+                }
+            }
+        }
+
+        #gnbMo {
+            z-index: 7; position: fixed; right: -300px;top: 0; width: 300px; height: 100%; background: dodgerblue; transition: 0.5s;
+
+            &.on {right: 0;}
+            
+            .gnbMo_list {
+                >ul {
+                    padding-top: 80px;
+                    >li {
+                        padding-left: 50px;
+                        >a {
+                            display: block; width: 100%; height: 50px; font: bold 20px/50px 'Titillium Web', sans-serif; color: #fff;
+                        }
+    
+                        >ul {
+                            display: none;
+                            >li {
+                                >a {
+                                    display: block; width: 100%; height: 40px; color: #eee; font: 14px/40px 'Titillium Web', sans-serif; box-sizing: border-box; padding: 0 20px;
+                                }
+                            }
+                        }
+                    }
+    
+                   
+                }
+            }
+
+            .gnbMo_util {
+               
+                >ul {
+
+                    >li {
+                        padding-left: 50px;
+
+                        >a {
+                            display: block; width: 100%; height: 50px; font: 600 20px/50px 'Titillium Web', sans-serif; color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// tablet
+@media screen and (max-width: $tablet) {
+    #header {
+        height: 60px; 
+    
+        .bgGnb {
+          display: none;
+        }
+    
+        .inner {
+            width: 100%; padding: 10px 20px;
+        
+            #gnb {
+               display: none;
+    
+            }
+    
+            .util {
+                display: none;
+            }
+                    
+            .btnCall {
+                position: absolute; right: 2%; top: 50%; transform: translateY(-50%); width: 30px; height: 20px; z-index: 8; display: block;
+
+                span {
+                    transition:0.5s;
+                    display: block; width: 100%; height: 3px; background:#444; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+
+                    &::before {
+                        content:''; position: absolute;  top: -10px; left: 0; height: 3px;  background:#444; transition:0.5s;
+                    }
+
+                    &::after {
+                        content:''; position: absolute; top: 10px; left: 0; height: 3px;  background:#444; transition:0.5s;
+                    }
+                }
+
+        
+                &.on {
+                    span {
+                        background: transparent;
+                        
+                        &::before {
+                            width: 100%; top: 0; transform: rotate(45deg); background: #fff;
+                        }
+                        &::after {
+                            width: 100%; top: 0; transform: rotate(-45deg);background: #fff;
+                        }
+                    }
+                }
+            }
+
+            #gnbMo {
+                z-index: 7; position: fixed; right: -300px;top: 0; width: 300px; height: 100%; background: dodgerblue; transition: 0.5s;
+
+                &.on {right: 0;}
+                
+                .gnbMo_list {
+                    >ul {
+                        padding-top: 80px;
+                        >li {
+                            padding-left: 50px;
+                            >a {
+                                display: block; width: 100%; height: 50px; font: bold 20px/50px 'Titillium Web', sans-serif; color: #fff;
+                            }
+        
+                            >ul {
+                                display: none;
+                                >li {
+                                    >a {
+                                        display: block; width: 100%; height: 40px; color: #eee; font: 14px/40px 'Titillium Web', sans-serif; box-sizing: border-box; padding: 0 20px;
+                                    }
+                                }
+                            }
+                        }
+        
+                    
+                    }
+                }
+
+                .gnbMo_util {
+                
+                    >ul {
+
+                        >li {
+                            padding-left: 50px;
+
+                            >a {
+                                display: block; width: 100%; height: 50px; font: bold 20px/50px 'Titillium Web', sans-serif; color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//mobile
+@media screen and (max-width: $mobile) {}

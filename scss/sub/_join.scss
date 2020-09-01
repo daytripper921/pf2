@@ -1,0 +1,186 @@
+#join_visual {
+    width: 100%; background: url('../img/join.jpg') no-repeat center center;  background-size: cover; height: 400px;
+    .inner {
+        width: 1180px; margin: 0 auto; position: relative; width: 100%; height: 100%;
+
+        >div {
+            position: absolute; left: 50%; top: 50%; transform: translate(-50%, -60%);text-align: center;
+        
+            span {border-bottom: 2px solid #fff; font: 16px/1 'Open Sans', sans-serif; letter-spacing: 1px; color: #fff; padding-bottom: 5px; text-shadow: 0px 0px 5px rgba(0,0,0,0.8);}
+            h1 {font: bold 40px/1 'Titillium Web', sans-serif; color: #fff; margin-top: 20px;  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);}
+        }
+    }
+}
+
+.red {background: rgba(255, 118, 118, 0.63)!important;}
+
+.join {
+    width: 100%; padding: 150px 0;
+    .inner {
+        width: 1180px; margin: 0 auto;
+
+        h1 {font: 700 30px/1 'Titillium Web', sans-serif; margin-bottom: 100px; color:  #0d978b; }
+
+        form { 
+            fieldset {
+                >h2 {font: bold 20px/1 'Nanum Gothic', sans-serif; color: #333; margin-bottom: 20px;}
+
+                .agreement {
+                    margin-bottom: 80px; 
+
+                    textarea {
+                        width: 100%; min-height: 160px; box-sizing: border-box; padding: 20px; margin-bottom: 10px; font: 15px/1.8 'Open Sans', sans-serif; color: #777; background: rgba(0,0,0,0.05);
+                    }
+
+                    input {margin-left: 10px;}
+                    label {font-size-adjust: 11px; color: #555; font-family: 'Nanum Gothic', sans-serif;}
+                }
+
+                table {
+                    width: 100%;
+                    tr {
+
+                        th {
+                            width: 20%; border-bottom: 1px solid #ddd; padding: 20px 40px; text-align: left; color: #207961; border-right: 1px solid #ddd;;
+                            font: 600 18px/1 'Titillium Web', sans-serif;
+                        }
+                        td {
+                            width: 80%; border-bottom: 1px solid #ddd; padding: 20px 40px; text-align: left; font: 15px/1 'Open Sans', sans-serif;
+
+                            input[type=text], input[type=password], select {
+                                width: 30%; height: 30px; padding: 0 20px; padding-right: 0; background: rgba(0,0,0,0.03); border: 1px solid #aaa; transition: 0.5s;
+
+                                &:hover {background: rgba(188, 248, 188, 0.685);}
+                                &:focus {background: rgba(188, 248, 188, 0.685);}
+                            }
+                            input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, select::-webkit-input-placeholder {
+                                color: rgba(0,0,0,0.5);
+                            }
+
+                            input[type=submit], input[type=reset] {
+                                width: 120px; height: 40px; border: 1px solid #555; font: bold 14px/40px 'Open Sans', sans-serif; color: #555; margin: 0 10px; cursor: pointer; background: transparent; transition: 0.2s;
+
+                                &:hover {
+                                    background: #888; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); color: #fff; 
+                                }
+                            }
+
+                            label {margin-right: 20px;}
+
+                            textarea {
+                                width: 100%; height: 120px; background: rgba(0,0,0,0.03); border: 1px solid #aaa; padding: 20px; transition: 0.2s;
+
+                                &:hover {
+                                    background: rgba(188, 248, 188, 0.685);
+                                }
+                            }
+                        }
+                        &:nth-of-type(1) {
+                            border-top: 2px solid #000;
+                        }
+                        &:last-child {
+                            border-bottom: 2px solid #000;
+                            td {text-align: center;}
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+// tablet
+@media screen and (max-width: $tablet) {
+    #join_visual {
+        height: 300px;
+        .inner {
+            width: 90%; 
+    
+        }
+    }
+
+        
+    .join {padding: 100px 0;
+        .inner {
+            width:90%; 
+
+            h1 {font: 28px/1 'arial';}
+
+            form {
+                fieldset {
+                    table {
+                        tr {
+                            td {
+                                input[type=text], input[type=password] {
+                                    width: 50%; 
+                                }
+                                input#email, select {width: 47%;}
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// mobile
+@media screen and (max-width: $mobile) {
+    .join {padding: 100px 0;
+        .inner {
+            width:90%; 
+
+            h1 {font: 28px/1 'arial';}
+
+            form {
+                fieldset {
+                    table {
+                        tr {
+                            position: relative; width: 100%;
+                            th {
+                                width: 100%; border-bottom: none; padding: 0px 0px;  border-right: none; display: block; margin: 10px 0;
+                            }
+                            td {
+                                display: block;
+                                width: 100%; border-bottom: 1px solid #ddd;padding: 0px 0px 20px 0; text-align: left;
+                
+                                input[type=text], input[type=password] {
+                                    width: 60%; height: 30px; padding: 0 20px; padding-right: 0; background: rgba(0,0,0,0.03); border: 1px solid #aaa; transition: 0.2s;
+                                }
+                                input#email, select {width: 45%;}
+                                                
+                                input[type=submit], input[type=reset] {
+                                   
+                                    width: 120px; height: 40px; border: 1px solid #555; font: bold 12px/40px 'arial'; color: #666; margin: 20px 10px 0 10px; cursor: pointer; background: transparent; transition: 0.2s;
+                                }
+                
+                                label {margin-right: 20px;}
+                
+                                textarea {
+                                    width: 100%; height: 120px; background: rgba(0,0,0,0.03); border: 1px solid #aaa; padding: 20px; transition: 0.2s;
+                
+                                    &:hover {
+                                        background: rgba(188, 248, 188, 0.685);
+                                    }
+                                }
+                            }
+                            &:nth-of-type(1) {
+                                border-top: 2px solid #000;
+                            }
+                            &:last-child {
+                                border-bottom: 2px solid #000;
+                                td {text-align: center;}
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    
+}

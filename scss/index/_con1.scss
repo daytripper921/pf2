@@ -1,0 +1,167 @@
+#con1 { 
+    width: 100%; height: 100vh; box-sizing: border-box; padding: 100px 0;
+
+    .inner {
+        width: 1180px; margin: 0 auto;
+
+        .wrap{
+            width: 100%; 
+
+            &::after {content:''; display: block; clear: both;}
+
+            article{
+                float: left; border: 1px solid red; box-sizing: border-box;
+                
+                &.txtBox1{
+                    width: 50%; height: 300px; margin-bottom: 40px; padding-top: 50px;
+                    h1 {font: 28px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 20px;}
+                    p {font: 20px/1 'Open Sans', sans-serif; color: #777;}
+                }
+                &.svg1 {
+                    width: 50%;height: 300px; margin-bottom: 40px;
+                    svg {
+                        width: 50%; margin-left: 40%;
+                        path {
+                            fill : transparent;
+                            stroke : #99f2c8;
+                            stroke-width:2;
+                            stroke-dasharray: 1747;
+                            stroke-dashoffset: -1747;
+                            transition:stroke-dashoffset 3s,fill 1s 3s;
+                            //transform: scale(0.8);
+                        }
+
+                        
+                    }
+                    &:hover svg path {
+                        stroke-dashoffset:0; 
+                        fill: none;
+                    }
+                }
+                &.svg2 {
+                    width: 50%;height: 300px;
+                    svg {
+                        width: 50%; margin-left: 10%;
+                        path {
+                            fill : transparent;
+                            stroke : #FF416C;
+                            stroke-width:2;
+                            stroke-dasharray: 1747;
+                            stroke-dashoffset: -1747;
+                            transition:stroke-dashoffset 3s,fill 1s 3s;
+                            //transform: scale(0.8);
+                        }
+
+                        
+                    }
+                    &:hover svg path {
+                        stroke-dashoffset:0; 
+                        fill: none;
+                    }
+                }
+                &.txtBox2{
+                    position: relative;
+                    width: 50%; height: 300px; padding-top: 100px;
+                    h2 {font: 24px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 15px;}
+                    p {font: 16px/1 'Open Sans', sans-serif; color: #777; margin-bottom: 20px;}
+                    .pic {position: absolute; right: 60px; top: 30px; width: 150px; height: 150px; background: #999;z-index: -1;}
+                    a{display: block; width: 100px; height: 30px; font: 16px/30px 'Open Sans', sans-serif; color: #aaa; border: 1px solid #aaa; text-align: center; border-radius: 13px;}
+
+                    &::before {content:''; display: block; background: #ddd; width: 60%; height: 60%; position: absolute; right: 5%; bottom: 20%; z-index: -2;}
+                }
+            }
+        }
+        
+        
+    }
+}
+
+//tablet
+@media screen and (max-width: $tablet) {
+    #con1 {
+        height: auto; padding: 80px 0; 
+    
+        .inner {
+            width:90%; 
+
+            .wrap{
+                article{
+                    
+                    &.txtBox1{
+                        width: 60%; 
+                        h1 {font: 24px/1 'Titillium Web', sans-serif;}
+                        p {font: 16px/1 'Open Sans', sans-serif;}
+                    }
+                    &.svg1 {
+                       width: 40%;
+                       svg {
+                        width: 80%; margin-left: 10%; margin-top: 30px;
+                            path {
+                                fill : transparent;
+                                stroke : #99f2c8;
+                                stroke-width:2;
+                                stroke-dasharray: 1747;
+                                stroke-dashoffset: -1747;
+                                transition:stroke-dashoffset 3s,fill 1s 3s;
+                                //transform: scale(0.8);
+                            }
+                        }
+                    }
+                    &.svg2 {
+                        width: 40%;
+                        svg {
+                            width: 80%; margin-left: 0%; margin-top: 20px;
+                            path {
+                                fill : transparent;
+                                stroke : #99f2c8;
+                                stroke-width:2;
+                                stroke-dasharray: 1747;
+                                stroke-dashoffset: -1747;
+                                transition:stroke-dashoffset 3s,fill 1s 3s;
+                                
+                            }
+                        }
+                    }
+                    &.txtBox2{
+                        width: 60%; 
+                        h2 {font: 22px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 15px;}
+                        p {font: 14px/1 'Open Sans', sans-serif; color: #777; margin-bottom: 20px;}
+                        .pic {right: 40px; }    
+                        &::before {right: 0%;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+// mobile
+@media screen and (max-width: $mobile) {
+    #con1 {
+         
+        .inner {
+           
+            .wrap{
+                article{
+                    
+                    &.txtBox1{
+                        width: 100%; height: 200px;
+                    }
+                    &.svg1 {
+                       display: none;
+                    }
+                    &.svg2 {
+                        display: none;
+                    }
+                    &.txtBox2{
+                        width: 100%;  height: 250px;
+                        h2 {font: 22px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 15px;}
+                        p {font: 14px/1 'Open Sans', sans-serif; color: #777; margin-bottom: 20px;}
+                        .pic {right: 40px; }    
+                        &::before {right: 0%;}
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+#navi {
+    position: fixed; right: 40px; top: 50%; transform: translateY(-50%);
+
+    li {
+        a {
+            width: 8px; height: 8px; border-radius: 50%; border: 1px solid #000; margin-bottom: 15px; display: block;
+
+            &.on {
+                background: #000; height: 25px;  border-radius: 25%;
+                
+            }
+        }
+       
+      
+    }
+}
+
+// tablet
+@media screen and (max-width:$tablet) {
+    #navi {display: none;}
+}

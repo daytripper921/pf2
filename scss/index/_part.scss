@@ -1,0 +1,121 @@
+#part {
+    width: 100%; padding: 100px 0; height: 100vh; 
+
+    .inner {
+        width: 1180px; margin: 0 auto; 
+
+        h1 {
+            font: bold 24px/1 'Titillium Web', sans-serif; color: #444; margin-bottom: 50px;
+        }
+
+        .wrap {
+            width: 100%; 
+
+            &::after {content:''; display: block; clear: both;}
+
+            li {
+                float: left; width: 280px; margin-right: 20px; transition: 0.3s; box-sizing: border-box; background: #999; height: 620px; position: relative; padding: 300px 50px 50px; cursor: pointer;
+
+                &:last-child {margin-right: 0;}
+
+                .list_wrap {
+                    visibility: hidden; opacity: 0; z-index: 1;
+                    h2 {font: bold 32px/1 'Titillium Web', sans-serif; color: #fff; margin-bottom: 10px; text-shadow: 5px 5px 10px rgba(0,0,0,0.4);}
+                    p {font: 18px/1.4 'Titillium Web', sans-serif; color: #fff; margin-bottom: 10px;text-shadow: 5px 5px 10px rgba(0,0,0,0.4);}
+                    a {display: block; width: 150px; height: 35px; font: 14px/35px 'Open Sans', sans-serif; color: #fff; border: 1px solid #fff; text-align: center; text-shadow: 5px 5px 10px rgba(0,0,0,0.6); box-shadow: 5px 5px 10px rgba(0,0,0,0.4);}
+                }
+
+                &.active {
+                    width: 580px; background: #555;
+                    animation: clear 1s forwards;
+                    
+                    > .list_wrap { 
+                        visibility: visible;  transition: 0.3s; opacity: 1;
+                    }
+                }
+
+                &:nth-of-type(1){
+                    background: url('../img/part1.jpg'); background-size: cover;
+                     -webkit-filter:blur(1px) grayscale(0.8);
+                }
+                &:nth-of-type(2){
+                    background: url('../img/part2.jpg'); background-size: cover;-webkit-filter:blur(1px) grayscale(0.8);
+                }
+                &:nth-of-type(3){
+                    background: url('../img/part3.jpg'); background-size: cover;-webkit-filter: blur(1px) grayscale(0.8);
+                }
+            }
+        }
+
+    }
+}
+@keyframes clear {
+    0% {-webkit-filter: grayscale(0.8);}
+    100% {-webkit-filter: grayscale(0);}
+}
+
+// tablet
+@media screen and (max-width: $tablet) {
+    #part {
+        padding: 80px 0; height: auto;
+    
+        .inner {
+            width: 90%; 
+    
+            h1 {
+                font: bold 20px/1 'Titillium Web', sans-serif;
+            }
+    
+            .wrap {
+                   
+                li {
+                    width: calc(96% / 4); margin-right: 2%; height: 520px; padding: 200px 50px 50px; 
+
+                    > .list_wrap { 
+                                
+                        h2 {font: bold 28px/1 'Titillium Web', sans-serif;}
+                        p {font: 15px/1.4 'Titillium Web', sans-serif;}
+                        a {display: block; width: 150px; height: 30px; font: 14px/30px 'Open Sans', sans-serif; color: #fff; border: 1px solid #fff; text-align: center;}
+                    }
+        
+                    &.active {
+                        width: calc((96% / 4) * 2); 
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+// mobile
+@media screen and (max-width: $mobile){
+    #part {    
+        .inner {    
+            .wrap {
+                   
+                li {
+                    width: calc(100%); margin-right: 0%; height: 150px; padding: 50px 40px; margin-bottom: 20px; 
+
+                    &:last-child {margin-bottom: 0;}
+
+                    > .list_wrap { 
+                                
+                        h2 {font-size: 24px;}
+                        p {font-size: 14px}
+                        
+                    }
+        
+                    &.active {
+                        width: 100%; height: 350px;
+                    }
+
+                    &:nth-of-type(1){background-position: center center;}
+                    &:nth-of-type(2){background-position: center center;}
+                    &:nth-of-type(3){background-position: center center;}
+                }
+            }
+    
+        }
+    }
+}
