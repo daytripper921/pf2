@@ -107,7 +107,7 @@
         .inner {
             width:90%; 
 
-            h1 {font: 28px/1 'arial';}
+            h1 {font-size:28px;}
 
             form {
                 fieldset {
@@ -130,12 +130,8 @@
 
 // mobile
 @media screen and (max-width: $mobile) {
-    .join {padding: 100px 0;
+    .join {
         .inner {
-            width:90%; 
-
-            h1 {font: 28px/1 'arial';}
-
             form {
                 fieldset {
                     table {
@@ -155,7 +151,7 @@
                                                 
                                 input[type=submit], input[type=reset] {
                                    
-                                    width: 120px; height: 40px; border: 1px solid #555; font: bold 12px/40px 'arial'; color: #666; margin: 20px 10px 0 10px; cursor: pointer; background: transparent; transition: 0.2s;
+                                    width: 120px; height: 40px; border: 1px solid #555; font: bold 12px/40px 'Open Sans', sans-serif; color: #666; margin: 20px 10px 0 10px; cursor: pointer; background: transparent; transition: 0.2s;
                                 }
                 
                                 label {margin-right: 20px;}

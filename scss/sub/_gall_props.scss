@@ -1,0 +1,108 @@
+#gall_props_visual {
+    width: 100%; background: url('../img/props.jpg') no-repeat center center;  background-size: cover; height: 400px;
+    .inner {
+        width: 1180px; margin: 0 auto; position: relative; width: 100%; height: 100%;
+
+        >div {
+            position: absolute; left: 50%; top: 50%; transform: translate(-50%, -60%);text-align: center;
+        
+            span {border-bottom: 2px solid #fff; font: 16px/1 'Open Sans', sans-serif; letter-spacing: 1px; color: #fff; padding-bottom: 5px; text-shadow: 0px 0px 5px rgba(0,0,0,0.8);}
+            h1 {font: bold 40px/1 'Titillium Web', sans-serif; color: #fff; margin-top: 20px;  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);}
+        }
+    }
+}
+
+.gall_props {
+    width: 100%; padding: 150px 0;
+    .inner {
+        width: 1180px; margin: 0 auto; position: relative;
+        
+        h1 {font: 700 30px/1 'Titillium Web', sans-serif; margin-bottom: 100px; color:  #0d978b; }
+
+        .wrap {
+            width: 100%; transform:translateY(100px); opacity:0;
+
+            &.on {
+                transform:translateY(0px); opacity:1; transition:1s;
+            }
+
+            ul {
+                width: 100%; margin-bottom: 50px;
+               
+                &::after {content:''; display: block; clear: both;}
+
+                li {
+                    width: 25%; box-sizing: border-box; padding: 10px; margin-bottom: 20px; float: left; 
+                    &::after {content:''; display: block; clear: both;}
+                    div {
+                         box-sizing: border-box; box-shadow: 5px 5px 10px #4f5a5596;
+                        // &:nth-of-type(4n) {margin-right: 0;}
+
+                        a {
+                            >img {width: 100%;}
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+.bigImg {
+    width:100%; height: 100%; padding: 50px; box-sizing:border-box; background:rgba(0,0,0,0.8); position:fixed; top: 0; left: 0; display: none; z-index: 800;
+
+    >img {width: 100%; height: 100%; object-fit: contain;}
+    >span {font-size: 14px; color: #fff; position: absolute; top: 20px; right: 20px; cursor: pointer;}
+
+}
+
+.paging {
+    text-align: center; 
+    a {
+        font: 20px/1 'Titillium Web', sans-serif; color: #0d978b;  margin-right: 15px;
+
+        &.on {
+            color:#008177; font-weight: 700; text-shadow: 1px 1px 1px #01ad9fb2;;
+        }
+    }
+}
+
+
+/* tablet */
+@media screen and (max-width:$tablet){
+
+    #gall_props_visual {
+        height: 300px;
+        .inner {
+            width: 90%; 
+    
+        }
+    }
+
+    .gall_props {
+        padding: 100px 0;
+
+        .inner {
+            width: 90%;
+
+            h1 {font-size:28px;}
+            
+            .wrap {
+                ul {
+                    li {
+                        width: 33.33333%;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// mobile
+@media screen and (max-width: $mobile) {
+    .gall_props .inner .wrap ul li {width: 100%;}
+}

@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMMUNITY</title>
+    <title>GALLERY</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/jquery-1.8.3.min.js""></script>
     <script src="../js/jquery.easing.1.3.js""></script>
     <script type="text/javascript"
     src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7cc7f782d99e1cf25bd3a43d2be6b281"></script>
     <script src="https://kit.fontawesome.com/5703ea6335.js" crossorigin="anonymous"></script>
-    <script src="../js/subpage/location.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/subpage/gall_props.js"></script>
     <script src="../js/common/header.js"></script>
 </head>
 <body>
-      
+     
     <!-- header -->
     
     <header id="header" class="myScroll">
@@ -42,16 +43,16 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">GALLERY</a>
+                    <a href="./gall_living.html">GALLERY</a>
                     <ul>
-                        <li><a href="#">LIVING ROOM</a></li>
-                        <li><a href="#">BED ROOM</a></li>
-                        <li><a href="#">KITCHEN</a></li>
-                        <li><a href="#">PROPS</a></li>
+                        <li><a href="./gall_living.html">LIVING ROOM</a></li>
+                        <li><a href="./gall_bed.html">BED ROOM</a></li>
+                        <li><a href="./gall_kitchen.html">KITCHEN</a></li>
+                        <li><a href="./gall_props.html">PROPS</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="asset/community.html">COMMUNITY</a>
+                    <a href="./community.html">COMMUNITY</a>
                     <ul>
                         <li><a href="#">2 DEPTH</a></li>
                         <li><a href="#">2 DEPTH</a></li>
@@ -60,7 +61,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="asset/location.html">LOCATION</a>
+                    <a href="./location.html">LOCATION</a>
                     <ul>
                         <li><a href="asset/location.html">강남점</a></li>
                         <li><a href="asset/location.html">종로점</a></li>
@@ -142,128 +143,52 @@
     </header>
 
     <!-- sub visual -->
-    <figure id="community_visual">
+    <figure id="gall_props_visual">
         <div class="inner">
             <div class="txt">
                 <span>MORE THAN JUST LIFESTYLE</span>
-                <h1>COMMUNITY</h1>
+                <h1>GALLERY</h1>
             </div>
         </div>
     </figure>
 
     <!-- content -->
-    <section class="subContent community">
+    <section class="subContent gall_props">
         <div class="inner">
-            <h1>COMMUNITY</h1>
+            <h1>INTERIOR PROPS</h1>
 
-            <div class="searchBox">
-                <form action="/" method="post">
-                    <fieldset>
-                        <legend class="hidden">게시글 검색</legend>
-
-                        <label for="search">SEARCH</label>
-                        <input type="text" id="search" name="search" placeholder="검색어를 입력하세요.">
-                        <input type="submit" value="통합검색">
-                    </fieldset>
-                </form>
+            <div class="wrap on">
+               <ul>
+                   <!-- <li>
+                       <div>
+                           <a href="#">
+                               <img src="#" alt="#">
+                           </a>
+                       </div>
+                   </li> -->
+               </ul>
             </div>
 
-            <table>
-                <caption class="hidden">자유게시판</caption>
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>작성자</th>
-                        <th>작성일</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td><a href="#">자유게시판 DB의 제목이 호출될 자리입니다.</a></td>
-                        <td>김영희</td>
-                        <td>2020.09.21</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="pagenation">
-                <a href="#" class="prev">PREV</a>
-
-                <p class="pages">
-                    <a href="#" class="on">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">7</a>
-                    <a href="#">8</a>
-                    <a href="#">9</a>
-                    <a href="#">10</a>
-                </p>
-
-                <a href="#" class="next">NEXT</a>
+            <div class="paging">
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
             </div>
         </div>
     </section>
 
-
+    <!-- 레이어 팝업 -->
+    <div class="bigImg">
+        <img src="#"/>
+        <!-- <span>close</span> -->
+    </div>
         
     <!-- footer -->
     <footer id="footer">

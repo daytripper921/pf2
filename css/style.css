@@ -2146,70 +2146,560 @@ textarea {
     .join .inner {
       width: 90%; }
       .join .inner h1 {
-        font: 28px/1 'arial'; }
+        font-size: 28px; }
       .join .inner form fieldset table tr td input[type=text], .join .inner form fieldset table tr td input[type=password] {
         width: 50%; }
       .join .inner form fieldset table tr td input#email, .join .inner form fieldset table tr td select {
         width: 47%; } }
 @media screen and (max-width: 639px) {
-  .join {
-    padding: 100px 0; }
-    .join .inner {
+  .join .inner form fieldset table tr {
+    position: relative;
+    width: 100%; }
+    .join .inner form fieldset table tr th {
+      width: 100%;
+      border-bottom: none;
+      padding: 0px 0px;
+      border-right: none;
+      display: block;
+      margin: 10px 0; }
+    .join .inner form fieldset table tr td {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      padding: 0px 0px 20px 0;
+      text-align: left; }
+      .join .inner form fieldset table tr td input[type=text], .join .inner form fieldset table tr td input[type=password] {
+        width: 60%;
+        height: 30px;
+        padding: 0 20px;
+        padding-right: 0;
+        background: rgba(0, 0, 0, 0.03);
+        border: 1px solid #aaa;
+        transition: 0.2s; }
+      .join .inner form fieldset table tr td input#email, .join .inner form fieldset table tr td select {
+        width: 45%; }
+      .join .inner form fieldset table tr td input[type=submit], .join .inner form fieldset table tr td input[type=reset] {
+        width: 120px;
+        height: 40px;
+        border: 1px solid #555;
+        font: bold 12px/40px 'Open Sans', sans-serif;
+        color: #666;
+        margin: 20px 10px 0 10px;
+        cursor: pointer;
+        background: transparent;
+        transition: 0.2s; }
+      .join .inner form fieldset table tr td label {
+        margin-right: 20px; }
+      .join .inner form fieldset table tr td textarea {
+        width: 100%;
+        height: 120px;
+        background: rgba(0, 0, 0, 0.03);
+        border: 1px solid #aaa;
+        padding: 20px;
+        transition: 0.2s; }
+        .join .inner form fieldset table tr td textarea:hover {
+          background: rgba(188, 248, 188, 0.685); }
+    .join .inner form fieldset table tr:nth-of-type(1) {
+      border-top: 2px solid #000; }
+    .join .inner form fieldset table tr:last-child {
+      border-bottom: 2px solid #000; }
+      .join .inner form fieldset table tr:last-child td {
+        text-align: center; } }
+#gall_living_visual {
+  width: 100%;
+  background: url("../img/living.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px; }
+  #gall_living_visual .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #gall_living_visual .inner > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -60%);
+      text-align: center; }
+      #gall_living_visual .inner > div span {
+        border-bottom: 2px solid #fff;
+        font: 16px/1 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        padding-bottom: 5px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
+      #gall_living_visual .inner > div h1 {
+        font: bold 40px/1 'Titillium Web', sans-serif;
+        color: #fff;
+        margin-top: 20px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
+
+.gall_living {
+  width: 100%;
+  padding: 150px 0; }
+  .gall_living .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .gall_living .inner h1 {
+      font: 700 30px/1 'Titillium Web', sans-serif;
+      margin-bottom: 100px;
+      color: #0d978b; }
+    .gall_living .inner .wrap {
+      width: 100%;
+      transform: translateY(100px);
+      opacity: 0; }
+      .gall_living .inner .wrap.on {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 1s; }
+      .gall_living .inner .wrap ul {
+        width: 100%;
+        margin-bottom: 50px; }
+        .gall_living .inner .wrap ul::after {
+          content: '';
+          display: block;
+          clear: both; }
+        .gall_living .inner .wrap ul li {
+          width: 25%;
+          box-sizing: border-box;
+          padding: 10px;
+          margin-bottom: 20px;
+          float: left; }
+          .gall_living .inner .wrap ul li::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .gall_living .inner .wrap ul li div {
+            box-sizing: border-box;
+            box-shadow: 5px 5px 10px #4f5a5596; }
+            .gall_living .inner .wrap ul li div a > img {
+              width: 100%; }
+
+.bigImg {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 800; }
+  .bigImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .bigImg > span {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer; }
+
+.paging {
+  text-align: center; }
+  .paging a {
+    font: 20px/1 'Titillium Web', sans-serif;
+    color: #0d978b;
+    margin-right: 15px; }
+    .paging a.on {
+      color: #008177;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #01ad9fb2; }
+
+/* tablet */
+@media screen and (max-width: 1179px) {
+  #gall_living_visual {
+    height: 300px; }
+    #gall_living_visual .inner {
       width: 90%; }
-      .join .inner h1 {
-        font: 28px/1 'arial'; }
-      .join .inner form fieldset table tr {
-        position: relative;
-        width: 100%; }
-        .join .inner form fieldset table tr th {
-          width: 100%;
-          border-bottom: none;
-          padding: 0px 0px;
-          border-right: none;
+
+  .gall_living {
+    padding: 100px 0; }
+    .gall_living .inner {
+      width: 90%; }
+      .gall_living .inner h1 {
+        font-size: 28px; }
+      .gall_living .inner .wrap ul li {
+        width: 33.33333%; } }
+@media screen and (max-width: 639px) {
+  .gall_living .inner .wrap ul li {
+    width: 100%; } }
+#gall_bed_visual {
+  width: 100%;
+  background: url("../img/bed.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px; }
+  #gall_bed_visual .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #gall_bed_visual .inner > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -60%);
+      text-align: center; }
+      #gall_bed_visual .inner > div span {
+        border-bottom: 2px solid #fff;
+        font: 16px/1 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        padding-bottom: 5px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
+      #gall_bed_visual .inner > div h1 {
+        font: bold 40px/1 'Titillium Web', sans-serif;
+        color: #fff;
+        margin-top: 20px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
+
+.gall_bed {
+  width: 100%;
+  padding: 150px 0; }
+  .gall_bed .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .gall_bed .inner h1 {
+      font: 700 30px/1 'Titillium Web', sans-serif;
+      margin-bottom: 100px;
+      color: #0d978b; }
+    .gall_bed .inner .wrap {
+      width: 100%;
+      transform: translateY(100px);
+      opacity: 0; }
+      .gall_bed .inner .wrap.on {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 1s; }
+      .gall_bed .inner .wrap ul {
+        width: 100%;
+        margin-bottom: 50px; }
+        .gall_bed .inner .wrap ul::after {
+          content: '';
           display: block;
-          margin: 10px 0; }
-        .join .inner form fieldset table tr td {
+          clear: both; }
+        .gall_bed .inner .wrap ul li {
+          width: 25%;
+          box-sizing: border-box;
+          padding: 10px;
+          margin-bottom: 20px;
+          float: left; }
+          .gall_bed .inner .wrap ul li::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .gall_bed .inner .wrap ul li div {
+            box-sizing: border-box;
+            box-shadow: 5px 5px 10px #4f5a5596; }
+            .gall_bed .inner .wrap ul li div a > img {
+              width: 100%; }
+
+.bigImg {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 800; }
+  .bigImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .bigImg > span {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer; }
+
+.paging {
+  text-align: center; }
+  .paging a {
+    font: 20px/1 'Titillium Web', sans-serif;
+    color: #0d978b;
+    margin-right: 15px; }
+    .paging a.on {
+      color: #008177;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #01ad9fb2; }
+
+/* tablet */
+@media screen and (max-width: 1179px) {
+  #gall_bed_visual {
+    height: 300px; }
+    #gall_bed_visual .inner {
+      width: 90%; }
+
+  .gall_bed {
+    padding: 100px 0; }
+    .gall_bed .inner {
+      width: 90%; }
+      .gall_bed .inner h1 {
+        font-size: 28px; }
+      .gall_bed .inner .wrap ul li {
+        width: 33.33333%; } }
+@media screen and (max-width: 639px) {
+  .gall_bed .inner .wrap ul li {
+    width: 100%; } }
+#gall_kitchen_visual {
+  width: 100%;
+  background: url("../img/kitchen.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px; }
+  #gall_kitchen_visual .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #gall_kitchen_visual .inner > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -60%);
+      text-align: center; }
+      #gall_kitchen_visual .inner > div span {
+        border-bottom: 2px solid #fff;
+        font: 16px/1 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        padding-bottom: 5px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
+      #gall_kitchen_visual .inner > div h1 {
+        font: bold 40px/1 'Titillium Web', sans-serif;
+        color: #fff;
+        margin-top: 20px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
+
+.gall_kitchen {
+  width: 100%;
+  padding: 150px 0; }
+  .gall_kitchen .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .gall_kitchen .inner h1 {
+      font: 700 30px/1 'Titillium Web', sans-serif;
+      margin-bottom: 100px;
+      color: #0d978b; }
+    .gall_kitchen .inner .wrap {
+      width: 100%;
+      transform: translateY(100px);
+      opacity: 0; }
+      .gall_kitchen .inner .wrap.on {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 1s; }
+      .gall_kitchen .inner .wrap ul {
+        width: 100%;
+        margin-bottom: 50px; }
+        .gall_kitchen .inner .wrap ul::after {
+          content: '';
           display: block;
-          width: 100%;
-          border-bottom: 1px solid #ddd;
-          padding: 0px 0px 20px 0;
-          text-align: left; }
-          .join .inner form fieldset table tr td input[type=text], .join .inner form fieldset table tr td input[type=password] {
-            width: 60%;
-            height: 30px;
-            padding: 0 20px;
-            padding-right: 0;
-            background: rgba(0, 0, 0, 0.03);
-            border: 1px solid #aaa;
-            transition: 0.2s; }
-          .join .inner form fieldset table tr td input#email, .join .inner form fieldset table tr td select {
-            width: 45%; }
-          .join .inner form fieldset table tr td input[type=submit], .join .inner form fieldset table tr td input[type=reset] {
-            width: 120px;
-            height: 40px;
-            border: 1px solid #555;
-            font: bold 12px/40px 'arial';
-            color: #666;
-            margin: 20px 10px 0 10px;
-            cursor: pointer;
-            background: transparent;
-            transition: 0.2s; }
-          .join .inner form fieldset table tr td label {
-            margin-right: 20px; }
-          .join .inner form fieldset table tr td textarea {
-            width: 100%;
-            height: 120px;
-            background: rgba(0, 0, 0, 0.03);
-            border: 1px solid #aaa;
-            padding: 20px;
-            transition: 0.2s; }
-            .join .inner form fieldset table tr td textarea:hover {
-              background: rgba(188, 248, 188, 0.685); }
-        .join .inner form fieldset table tr:nth-of-type(1) {
-          border-top: 2px solid #000; }
-        .join .inner form fieldset table tr:last-child {
-          border-bottom: 2px solid #000; }
-          .join .inner form fieldset table tr:last-child td {
-            text-align: center; } }
+          clear: both; }
+        .gall_kitchen .inner .wrap ul li {
+          width: 25%;
+          box-sizing: border-box;
+          padding: 10px;
+          margin-bottom: 20px;
+          float: left; }
+          .gall_kitchen .inner .wrap ul li::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .gall_kitchen .inner .wrap ul li div {
+            box-sizing: border-box;
+            box-shadow: 5px 5px 10px #4f5a5596; }
+            .gall_kitchen .inner .wrap ul li div a > img {
+              width: 100%; }
+
+.bigImg {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 800; }
+  .bigImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .bigImg > span {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer; }
+
+.paging {
+  text-align: center; }
+  .paging a {
+    font: 20px/1 'Titillium Web', sans-serif;
+    color: #0d978b;
+    margin-right: 15px; }
+    .paging a.on {
+      color: #008177;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #01ad9fb2; }
+
+/* tablet */
+@media screen and (max-width: 1179px) {
+  #gall_kitchen_visual {
+    height: 300px; }
+    #gall_kitchen_visual .inner {
+      width: 90%; }
+
+  .gall_kitchen {
+    padding: 100px 0; }
+    .gall_kitchen .inner {
+      width: 90%; }
+      .gall_kitchen .inner h1 {
+        font-size: 28px; }
+      .gall_kitchen .inner .wrap ul li {
+        width: 33.33333%; } }
+@media screen and (max-width: 639px) {
+  .gall_kitchen .inner .wrap ul li {
+    width: 100%; } }
+#gall_props_visual {
+  width: 100%;
+  background: url("../img/props.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px; }
+  #gall_props_visual .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #gall_props_visual .inner > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -60%);
+      text-align: center; }
+      #gall_props_visual .inner > div span {
+        border-bottom: 2px solid #fff;
+        font: 16px/1 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        padding-bottom: 5px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
+      #gall_props_visual .inner > div h1 {
+        font: bold 40px/1 'Titillium Web', sans-serif;
+        color: #fff;
+        margin-top: 20px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
+
+.gall_props {
+  width: 100%;
+  padding: 150px 0; }
+  .gall_props .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .gall_props .inner h1 {
+      font: 700 30px/1 'Titillium Web', sans-serif;
+      margin-bottom: 100px;
+      color: #0d978b; }
+    .gall_props .inner .wrap {
+      width: 100%;
+      transform: translateY(100px);
+      opacity: 0; }
+      .gall_props .inner .wrap.on {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 1s; }
+      .gall_props .inner .wrap ul {
+        width: 100%;
+        margin-bottom: 50px; }
+        .gall_props .inner .wrap ul::after {
+          content: '';
+          display: block;
+          clear: both; }
+        .gall_props .inner .wrap ul li {
+          width: 25%;
+          box-sizing: border-box;
+          padding: 10px;
+          margin-bottom: 20px;
+          float: left; }
+          .gall_props .inner .wrap ul li::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .gall_props .inner .wrap ul li div {
+            box-sizing: border-box;
+            box-shadow: 5px 5px 10px #4f5a5596; }
+            .gall_props .inner .wrap ul li div a > img {
+              width: 100%; }
+
+.bigImg {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 800; }
+  .bigImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .bigImg > span {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer; }
+
+.paging {
+  text-align: center; }
+  .paging a {
+    font: 20px/1 'Titillium Web', sans-serif;
+    color: #0d978b;
+    margin-right: 15px; }
+    .paging a.on {
+      color: #008177;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #01ad9fb2; }
+
+/* tablet */
+@media screen and (max-width: 1179px) {
+  #gall_props_visual {
+    height: 300px; }
+    #gall_props_visual .inner {
+      width: 90%; }
+
+  .gall_props {
+    padding: 100px 0; }
+    .gall_props .inner {
+      width: 90%; }
+      .gall_props .inner h1 {
+        font-size: 28px; }
+      .gall_props .inner .wrap ul li {
+        width: 33.33333%; } }
+@media screen and (max-width: 639px) {
+  .gall_props .inner .wrap ul li {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
