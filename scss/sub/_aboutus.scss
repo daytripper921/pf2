@@ -1,0 +1,189 @@
+#aboutus_visual {
+    width: 100%; background: url('../img/aboutus.jpg') no-repeat center center;  background-size: cover; height: 400px; transition: 0.5s;
+    .inner {
+        width: 1180px; margin: 0 auto; position: relative; width: 100%; height: 100%;
+
+        >div {
+            position: absolute; left: 50%; top: 50%; transform: translate(-50%, -60%);text-align: center;
+        
+            span {border-bottom: 2px solid #fff; font: 16px/1 'Open Sans', sans-serif; letter-spacing: 1px; color: #fff; padding-bottom: 5px; text-shadow: 0px 0px 5px rgba(0,0,0,0.8);}
+            h1 {font: bold 40px/1 'Titillium Web', sans-serif; color: #fff; margin-top: 20px;  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);}
+        }
+    }
+}
+
+.aboutus {
+    width: 100%; padding: 150px 0; overflow: hidden;
+    .inner {
+        width: 1180px; margin: 0 auto; 
+
+        h1 {font: 700 35px/1 'Titillium Web', sans-serif; margin-bottom: 100px; color:  #0d978b; }
+
+        #value {
+            width: 100%; margin-bottom: 300px; position: relative;
+
+            h2 {font: 600 34px/1 'Titillium Web', sans-serif; margin-bottom: 50px; color:  #267255; text-align: center;}
+
+            &::before {
+                content:''; display: block; width: 150%; background:#9cbbaf8e; height: 80%; position: absolute; left: -20%; top: 15%; z-index: -1;
+            }
+
+            .value_inner {
+                width: 100%;  padding: 50px 0; 
+                //border: 2px solid #267255;
+                .wrap {
+                    margin-bottom: 50px; 
+
+                    &::after {content:''; display: block; clear: both;}
+
+                    article {
+                        width: 265px; margin-right: 40px; float: left; margin-bottom: 20px; box-sizing: border-box;
+                        .pic {
+                            width: 100%; height: 265px; background: #999; margin-bottom: 20px; border-radius: 50%;
+
+                            p {align-items: center; justify-content: center; display: flex; height: 100%; font: 700 22px/1 'Titillium Web', sans-serif; color: #fff;}
+                        }
+                        >p {text-align: center; font: 700 22px/1 'Nanum Gothic', sans-serif; color: #315346;}
+
+                        &:last-child {margin-right: 0;}
+                        &:nth-of-type(1) .pic {background: url('../img/core1.jpg') no-repeat center center; background-size: cover;}
+                        &:nth-of-type(2) .pic {background: url('../img/core2.jpg') no-repeat center top; background-size: cover;}
+                        &:nth-of-type(3) .pic {background: url('../img/core3.jpg') no-repeat center center; background-size: cover;}
+                        &:nth-of-type(4) .pic {background: url('../img/core4.jpg') no-repeat center center; background-size: cover;}
+                    }
+                }
+                >p {
+                    text-align: center; font: 700 20px/1.4 'Nanum Gothic', sans-serif; color: #267255;
+                }
+            }
+        }
+
+        #partners {
+            width: 100%; 
+
+            h2 {font: 600 34px/1 'Titillium Web', sans-serif; margin-bottom: 50px; color:  #267255; text-align: center;}
+
+            .partners_inner {
+                width: 100%;
+                .wrap {
+                    width: 1000px; margin: 0 auto;
+                    &::after {content:''; display: block; clear: both;}
+
+                    article {
+                        width: 300px; margin-right: 50px; margin-bottom: 50px; border: 1px solid #aaa; height: 150px; float: left; box-sizing: border-box;
+
+                        &:nth-child(3n) {margin-right: 0;}
+                        &:nth-of-type(1) {background:url('../img/partner1.png') no-repeat center center; background-size: contain;}
+                        &:nth-of-type(2) {background:url('../img/partner2.jpg') no-repeat center center; background-size: contain;}
+                        &:nth-of-type(3) {background:url('../img/partner3.png') no-repeat center center; background-size: contain;}
+                        &:nth-of-type(4) {background:url('../img/partner4.jpg') no-repeat center center; background-size: contain;}
+                        &:nth-of-type(5) {background:url('../img/partner5.png') no-repeat center center; background-size: contain;}
+                        &:nth-of-type(6) {background:url('../img/partner6.png') no-repeat center center; background-size: contain;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+// tablet
+@media screen and (max-width: $tablet) {
+    #aboutus_visual {
+        height: 300px;
+        .inner {
+            width: 90%; 
+    
+        }
+    }
+
+        
+    .aboutus {padding: 100px 0;
+        .inner {
+            width: 90%; 
+
+            h1 {font: 700 30px/1 'Titillium Web', sans-serif; margin-bottom: 100px; color:  #0d978b; }
+
+            #value {
+                margin-bottom: 250px;
+                h2 {font-size:30px;}
+
+                &::before { height: 94%; top: 9%;}
+
+                .value_inner {
+                    .wrap {
+                        article {
+                            width: 45%; margin-right: 10%; margin-bottom: 50px;
+                            .pic {
+                                height: 250px;  border-radius: 15px;
+
+                                p {font-size: 30px;}
+                            }
+                            &:nth-of-type(2n) {margin-right: 0;}
+                            
+                        }
+                    }
+                  
+                }
+            }
+
+            #partners {
+                h2 {font-size: 30px;}
+
+                .partners_inner {
+                    .wrap {
+                        width:90%;
+                        article {
+                            width: 49%; margin-right: 2%; 
+
+                            &:nth-child(3n) {margin-right: 2%;}
+                            &:nth-child(2n) {margin-right: 0;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// tablet
+@media screen and (max-width: $mobile) {
+
+    .aboutus {
+        .inner {
+
+            #value {
+                margin-bottom: 250px;
+
+                &::before { height: 12%; top: 89%;}
+
+                .value_inner {
+                    .wrap {
+                        article {
+                            width: 100%; margin-right: 0%;
+                            .pic {
+                                height: 250px;  border-radius: 10px;
+                            }
+                        }
+                    }
+                  
+                }
+            }
+
+            #partners {
+
+                .partners_inner {
+                    .wrap {
+                        width:90%;
+                        article {
+                            width: 100%; margin-right: 0%; 
+
+                            &:nth-child(3n) {margin-right: 0%;}
+                            &:nth-child(2n) {margin-right: 0;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

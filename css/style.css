@@ -1386,7 +1386,7 @@ a {
       top: 0;
       width: 300px;
       height: 100%;
-      background: dodgerblue;
+      background: #4d826c;
       transition: 0.5s; }
       #header .inner #gnbMo.on {
         right: 0; }
@@ -1485,7 +1485,7 @@ a {
         top: 0;
         width: 300px;
         height: 100%;
-        background: dodgerblue;
+        background: #4d826c;
         transition: 0.5s; }
         #header .inner #gnbMo.on {
           right: 0; }
@@ -1819,7 +1819,7 @@ textarea {
     .community .inner h1 {
       font: 600 30px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
-      color: #333; }
+      color: #0d978b; }
     .community .inner .searchBox {
       width: 100%;
       border-top: 1px solid #555;
@@ -2205,6 +2205,106 @@ textarea {
       border-bottom: 2px solid #000; }
       .join .inner form fieldset table tr:last-child td {
         text-align: center; } }
+#login_visual {
+  width: 100%;
+  background: url("../img/login.jpg") no-repeat center 20%;
+  background-size: cover;
+  height: 400px; }
+  #login_visual .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #login_visual .inner > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -60%);
+      text-align: center; }
+      #login_visual .inner > div span {
+        border-bottom: 2px solid #fff;
+        font: 16px/1 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        padding-bottom: 5px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
+      #login_visual .inner > div h1 {
+        font: bold 40px/1 'Titillium Web', sans-serif;
+        color: #fff;
+        margin-top: 20px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
+
+.login {
+  width: 100%;
+  padding: 150px 0; }
+  .login .inner {
+    width: 1180px;
+    margin: 0 auto;
+    border: 1px solid red;
+    box-sizing: border-box; }
+    .login .inner form {
+      position: relative;
+      width: 400px;
+      margin: 0 auto; }
+      .login .inner form .int-area {
+        width: 100%;
+        position: relative; }
+        .login .inner form .int-area:nth-child(2) {
+          margin-top: 20px; }
+        .login .inner form .int-area input {
+          width: 100%;
+          padding: 25px 10px 10px;
+          font: 17px/1 'Titillium Web', sans-serif;
+          color: #777;
+          border: none;
+          border-bottom: 1px solid #999; }
+        .login .inner form .int-area label {
+          position: absolute;
+          left: 10px;
+          top: 25px;
+          font: 17px/1 'Titillium Web', sans-serif;
+          color: #777;
+          transition: top 0.4s ease; }
+          .login .inner form .int-area label.warning {
+            color: #ff3939 !important;
+            animation: warning 0.3s ease;
+            animation-iteration-count: 3; }
+        .login .inner form .int-area input:focus + label, .login .inner form .int-area input:valid + label {
+          top: 2px;
+          font-size: 13px;
+          color: #0bb674; }
+      .login .inner form .btn-area {
+        margin-top: 40px;
+        width: 400px;
+        margin: 0 quto; }
+        .login .inner form .btn-area button {
+          width: 100%;
+          height: 50px;
+          background: #369e76;
+          color: #fff;
+          font: 20px/50px 'Titillium Web', sans-serif;
+          border: none;
+          border-radius: 25px;
+          cursor: pointer; }
+    .login .inner .caption {
+      text-align: center;
+      margin-top: 20px; }
+      .login .inner .caption a {
+        color: #1d4938e3;
+        font: 14px/1 'Titillium Web', sans-serif; }
+
+@keyframes warning {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 #gall_living_visual {
   width: 100%;
   background: url("../img/living.jpg") no-repeat center center;
@@ -2701,5 +2801,225 @@ textarea {
 @media screen and (max-width: 639px) {
   .gall_props .inner .wrap ul li {
     width: 100%; } }
+#aboutus_visual {
+  width: 100%;
+  background: url("../img/aboutus.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  transition: 0.5s; }
+  #aboutus_visual .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #aboutus_visual .inner > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -60%);
+      text-align: center; }
+      #aboutus_visual .inner > div span {
+        border-bottom: 2px solid #fff;
+        font: 16px/1 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        padding-bottom: 5px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
+      #aboutus_visual .inner > div h1 {
+        font: bold 40px/1 'Titillium Web', sans-serif;
+        color: #fff;
+        margin-top: 20px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
+
+.aboutus {
+  width: 100%;
+  padding: 150px 0;
+  overflow: hidden; }
+  .aboutus .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    .aboutus .inner h1 {
+      font: 700 35px/1 'Titillium Web', sans-serif;
+      margin-bottom: 100px;
+      color: #0d978b; }
+    .aboutus .inner #value {
+      width: 100%;
+      margin-bottom: 300px;
+      position: relative; }
+      .aboutus .inner #value h2 {
+        font: 600 34px/1 'Titillium Web', sans-serif;
+        margin-bottom: 50px;
+        color: #267255;
+        text-align: center; }
+      .aboutus .inner #value::before {
+        content: '';
+        display: block;
+        width: 150%;
+        background: #9cbbaf8e;
+        height: 80%;
+        position: absolute;
+        left: -20%;
+        top: 15%;
+        z-index: -1; }
+      .aboutus .inner #value .value_inner {
+        width: 100%;
+        padding: 50px 0; }
+        .aboutus .inner #value .value_inner .wrap {
+          margin-bottom: 50px; }
+          .aboutus .inner #value .value_inner .wrap::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .aboutus .inner #value .value_inner .wrap article {
+            width: 265px;
+            margin-right: 40px;
+            float: left;
+            margin-bottom: 20px;
+            box-sizing: border-box; }
+            .aboutus .inner #value .value_inner .wrap article .pic {
+              width: 100%;
+              height: 265px;
+              background: #999;
+              margin-bottom: 20px;
+              border-radius: 50%; }
+              .aboutus .inner #value .value_inner .wrap article .pic p {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                height: 100%;
+                font: 700 22px/1 'Titillium Web', sans-serif;
+                color: #fff; }
+            .aboutus .inner #value .value_inner .wrap article > p {
+              text-align: center;
+              font: 700 22px/1 'Nanum Gothic', sans-serif;
+              color: #315346; }
+            .aboutus .inner #value .value_inner .wrap article:last-child {
+              margin-right: 0; }
+            .aboutus .inner #value .value_inner .wrap article:nth-of-type(1) .pic {
+              background: url("../img/core1.jpg") no-repeat center center;
+              background-size: cover; }
+            .aboutus .inner #value .value_inner .wrap article:nth-of-type(2) .pic {
+              background: url("../img/core2.jpg") no-repeat center top;
+              background-size: cover; }
+            .aboutus .inner #value .value_inner .wrap article:nth-of-type(3) .pic {
+              background: url("../img/core3.jpg") no-repeat center center;
+              background-size: cover; }
+            .aboutus .inner #value .value_inner .wrap article:nth-of-type(4) .pic {
+              background: url("../img/core4.jpg") no-repeat center center;
+              background-size: cover; }
+        .aboutus .inner #value .value_inner > p {
+          text-align: center;
+          font: 700 20px/1.4 'Nanum Gothic', sans-serif;
+          color: #267255; }
+    .aboutus .inner #partners {
+      width: 100%; }
+      .aboutus .inner #partners h2 {
+        font: 600 34px/1 'Titillium Web', sans-serif;
+        margin-bottom: 50px;
+        color: #267255;
+        text-align: center; }
+      .aboutus .inner #partners .partners_inner {
+        width: 100%; }
+        .aboutus .inner #partners .partners_inner .wrap {
+          width: 1000px;
+          margin: 0 auto; }
+          .aboutus .inner #partners .partners_inner .wrap::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .aboutus .inner #partners .partners_inner .wrap article {
+            width: 300px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            border: 1px solid #aaa;
+            height: 150px;
+            float: left;
+            box-sizing: border-box; }
+            .aboutus .inner #partners .partners_inner .wrap article:nth-child(3n) {
+              margin-right: 0; }
+            .aboutus .inner #partners .partners_inner .wrap article:nth-of-type(1) {
+              background: url("../img/partner1.png") no-repeat center center;
+              background-size: contain; }
+            .aboutus .inner #partners .partners_inner .wrap article:nth-of-type(2) {
+              background: url("../img/partner2.jpg") no-repeat center center;
+              background-size: contain; }
+            .aboutus .inner #partners .partners_inner .wrap article:nth-of-type(3) {
+              background: url("../img/partner3.png") no-repeat center center;
+              background-size: contain; }
+            .aboutus .inner #partners .partners_inner .wrap article:nth-of-type(4) {
+              background: url("../img/partner4.jpg") no-repeat center center;
+              background-size: contain; }
+            .aboutus .inner #partners .partners_inner .wrap article:nth-of-type(5) {
+              background: url("../img/partner5.png") no-repeat center center;
+              background-size: contain; }
+            .aboutus .inner #partners .partners_inner .wrap article:nth-of-type(6) {
+              background: url("../img/partner6.png") no-repeat center center;
+              background-size: contain; }
+
+@media screen and (max-width: 1179px) {
+  #aboutus_visual {
+    height: 300px; }
+    #aboutus_visual .inner {
+      width: 90%; }
+
+  .aboutus {
+    padding: 100px 0; }
+    .aboutus .inner {
+      width: 90%; }
+      .aboutus .inner h1 {
+        font: 700 30px/1 'Titillium Web', sans-serif;
+        margin-bottom: 100px;
+        color: #0d978b; }
+      .aboutus .inner #value {
+        margin-bottom: 250px; }
+        .aboutus .inner #value h2 {
+          font-size: 30px; }
+        .aboutus .inner #value::before {
+          height: 94%;
+          top: 9%; }
+        .aboutus .inner #value .value_inner .wrap article {
+          width: 45%;
+          margin-right: 10%;
+          margin-bottom: 50px; }
+          .aboutus .inner #value .value_inner .wrap article .pic {
+            height: 250px;
+            border-radius: 15px; }
+            .aboutus .inner #value .value_inner .wrap article .pic p {
+              font-size: 30px; }
+          .aboutus .inner #value .value_inner .wrap article:nth-of-type(2n) {
+            margin-right: 0; }
+      .aboutus .inner #partners h2 {
+        font-size: 30px; }
+      .aboutus .inner #partners .partners_inner .wrap {
+        width: 90%; }
+        .aboutus .inner #partners .partners_inner .wrap article {
+          width: 49%;
+          margin-right: 2%; }
+          .aboutus .inner #partners .partners_inner .wrap article:nth-child(3n) {
+            margin-right: 2%; }
+          .aboutus .inner #partners .partners_inner .wrap article:nth-child(2n) {
+            margin-right: 0; } }
+@media screen and (max-width: 639px) {
+  .aboutus .inner #value {
+    margin-bottom: 250px; }
+    .aboutus .inner #value::before {
+      height: 12%;
+      top: 89%; }
+    .aboutus .inner #value .value_inner .wrap article {
+      width: 100%;
+      margin-right: 0%; }
+      .aboutus .inner #value .value_inner .wrap article .pic {
+        height: 250px;
+        border-radius: 10px; }
+  .aboutus .inner #partners .partners_inner .wrap {
+    width: 90%; }
+    .aboutus .inner #partners .partners_inner .wrap article {
+      width: 100%;
+      margin-right: 0%; }
+      .aboutus .inner #partners .partners_inner .wrap article:nth-child(3n) {
+        margin-right: 0%; }
+      .aboutus .inner #partners .partners_inner .wrap article:nth-child(2n) {
+        margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
