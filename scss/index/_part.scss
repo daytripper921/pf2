@@ -1,5 +1,5 @@
 #part {
-    width: 100%; padding: 100px 0; height: 100vh; 
+    width: 100%; padding: 150px 0; 
 
     .inner {
         width: 1180px; margin: 0 auto; 
@@ -9,7 +9,7 @@
         }
 
         .wrap {
-            width: 100%; 
+            width: 100%;  transition: 0.5s; opacity: 0;
 
             &::after {content:''; display: block; clear: both;}
 
@@ -47,6 +47,10 @@
             }
         }
 
+    }
+
+    &.on {
+        .inner .wrap { opacity: 1;}
     }
 }
 @keyframes clear {

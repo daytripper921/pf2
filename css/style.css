@@ -171,9 +171,7 @@ a {
     display: none; } }
 #con1 {
   width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 100px 0; }
+  padding: 150px 0 50px; }
   #con1 .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -185,53 +183,22 @@ a {
         clear: both; }
       #con1 .inner .wrap article {
         float: left;
-        border: 1px solid red;
         box-sizing: border-box; }
         #con1 .inner .wrap article.txtBox1 {
+          transform: translateX(-200px);
+          opacity: 0;
+          transition: 0.5s;
           width: 50%;
           height: 300px;
           margin-bottom: 40px;
-          padding-top: 50px; }
-          #con1 .inner .wrap article.txtBox1 h1 {
+          padding-top: 100px; }
+          #con1 .inner .wrap article.txtBox1 h2 {
             font: 28px/1 'Titillium Web', sans-serif;
             color: #333;
             margin-bottom: 20px; }
           #con1 .inner .wrap article.txtBox1 p {
             font: 20px/1 'Open Sans', sans-serif;
-            color: #777; }
-        #con1 .inner .wrap article.svg1 {
-          width: 50%;
-          height: 300px;
-          margin-bottom: 40px; }
-          #con1 .inner .wrap article.svg1 svg {
-            width: 50%;
-            margin-left: 40%; }
-            #con1 .inner .wrap article.svg1 svg path {
-              fill: transparent;
-              stroke: #99f2c8;
-              stroke-width: 2;
-              stroke-dasharray: 1747;
-              stroke-dashoffset: -1747;
-              transition: stroke-dashoffset 3s,fill 1s 3s; }
-          #con1 .inner .wrap article.svg1:hover svg path {
-            stroke-dashoffset: 0;
-            fill: none; }
-        #con1 .inner .wrap article.svg2 {
-          width: 50%;
-          height: 300px; }
-          #con1 .inner .wrap article.svg2 svg {
-            width: 50%;
-            margin-left: 10%; }
-            #con1 .inner .wrap article.svg2 svg path {
-              fill: transparent;
-              stroke: #FF416C;
-              stroke-width: 2;
-              stroke-dasharray: 1747;
-              stroke-dashoffset: -1747;
-              transition: stroke-dashoffset 3s,fill 1s 3s; }
-          #con1 .inner .wrap article.svg2:hover svg path {
-            stroke-dashoffset: 0;
-            fill: none; }
+            color: #15a15b; }
         #con1 .inner .wrap article.txtBox2 {
           position: relative;
           width: 50%;
@@ -240,11 +207,17 @@ a {
           #con1 .inner .wrap article.txtBox2 h2 {
             font: 24px/1 'Titillium Web', sans-serif;
             color: #333;
-            margin-bottom: 15px; }
+            margin-bottom: 15px;
+            opacity: 0;
+            transition: 0.5s 0.1s;
+            transform: translateY(-100px); }
           #con1 .inner .wrap article.txtBox2 p {
             font: 16px/1 'Open Sans', sans-serif;
-            color: #777;
-            margin-bottom: 20px; }
+            color: #15a15b;
+            margin-bottom: 20px;
+            opacity: 0;
+            transition: 0.5s;
+            transform: translateY(-100px); }
           #con1 .inner .wrap article.txtBox2 .pic {
             position: absolute;
             right: 60px;
@@ -252,16 +225,21 @@ a {
             width: 150px;
             height: 150px;
             background: #999;
-            z-index: -1; }
+            z-index: -1;
+            transform: translateX(100px);
+            opacity: 0;
+            transition: 0.5s  0.3s; }
           #con1 .inner .wrap article.txtBox2 a {
             display: block;
             width: 100px;
             height: 30px;
             font: 16px/30px 'Open Sans', sans-serif;
-            color: #aaa;
-            border: 1px solid #aaa;
+            color: #217c4e;
+            border: 1px solid #555;
             text-align: center;
-            border-radius: 13px; }
+            border-radius: 13px;
+            opacity: 0;
+            transition: 0.5s 0.3s; }
           #con1 .inner .wrap article.txtBox2::before {
             content: '';
             display: block;
@@ -271,7 +249,27 @@ a {
             position: absolute;
             right: 5%;
             bottom: 20%;
-            z-index: -2; }
+            z-index: -2;
+            transform: translateX(200px);
+            opacity: 0;
+            transition: 0.5s; }
+  #con1.on .inner .wrap .txtBox1 {
+    transform: translateX(0);
+    opacity: 1; }
+  #con1.on .inner .wrap .txtBox2 h2 {
+    opacity: 1;
+    transform: translateY(0); }
+  #con1.on .inner .wrap .txtBox2 p {
+    opacity: 1;
+    transform: translateY(0); }
+  #con1.on .inner .wrap .txtBox2 a {
+    opacity: 1; }
+  #con1.on .inner .wrap .txtBox2 .pic {
+    transform: translateX(0);
+    opacity: 1; }
+  #con1.on .inner .wrap .txtBox2::before {
+    transform: translateX(0);
+    opacity: 1; }
 
 @media screen and (max-width: 1179px) {
   #con1 {
@@ -350,8 +348,7 @@ a {
       right: 0%; } }
 #part {
   width: 100%;
-  padding: 100px 0;
-  height: 100vh; }
+  padding: 150px 0; }
   #part .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -360,7 +357,9 @@ a {
       color: #444;
       margin-bottom: 50px; }
     #part .inner .wrap {
-      width: 100%; }
+      width: 100%;
+      transition: 0.5s;
+      opacity: 0; }
       #part .inner .wrap::after {
         content: '';
         display: block;
@@ -422,6 +421,8 @@ a {
           background: url("../img/part3.jpg");
           background-size: cover;
           -webkit-filter: blur(1px) grayscale(0.8); }
+  #part.on .inner .wrap {
+    opacity: 1; }
 
 @keyframes clear {
   0% {
@@ -479,9 +480,8 @@ a {
       background-position: center center; } }
 #tab {
   width: 100%;
-  padding: 100px 0;
-  overflow: hidden;
-  height: 100vh; }
+  padding: 150px 0;
+  overflow: hidden; }
   #tab .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -641,9 +641,7 @@ a {
           height: 80%; } }
 #blue {
   width: 100%;
-  height: 100vh;
-  padding: 100px 0;
-  box-sizing: border-box; }
+  padding: 150px 0; }
   #blue .inner {
     width: 1180px;
     margin: 0 auto;
@@ -659,7 +657,10 @@ a {
       height: 300px;
       position: relative; }
       #blue .inner .box1 .left p {
-        font: 14px/1.4 'Titillium Web', sans-serif; }
+        font: 14px/1.4 'Titillium Web', sans-serif;
+        position: absolute;
+        left: 0;
+        top: 15%; }
       #blue .inner .box1 .left h1 {
         left: 0;
         top: 30%;
@@ -718,9 +719,9 @@ a {
               letter-spacing: 1px;
               transition: 0.5s;
               padding: 3px; }
-              #blue .inner .box1 .right .wrap ul li p:hover {
-                transform: rotate(0) scale(1.2);
-                color: #fff; }
+            #blue .inner .box1 .right .wrap ul li:hover p {
+              transform: rotate(0) scale(1.2);
+              color: #fff; }
       #blue .inner .box1 .right > .prev {
         position: absolute;
         background: url("../img/bluePrev.png");
@@ -800,9 +801,9 @@ a {
                 top: 0;
                 transition: 0.5s;
                 padding: 3px; }
-                #blue .inner .box2 .left2 .wrap ul li p:hover {
-                  transform: rotate(0) scale(1.2) translate(-25px, 0px);
-                  color: #ffa704; }
+              #blue .inner .box2 .left2 .wrap ul li:hover p {
+                transform: rotate(0) scale(1.2) translate(-25px, 0px);
+                color: #ffa704; }
         #blue .inner .box2 .left2 > .orgPrev {
           position: absolute;
           background: url("../img/bluePrev.png");
@@ -829,7 +830,10 @@ a {
         position: relative; }
         #blue .inner .box2 .right2 p {
           font: 14px/1.4 'Titillium Web', sans-serif;
-          text-align: right; }
+          text-align: right;
+          position: absolute;
+          right: 0;
+          top: 15%; }
         #blue .inner .box2 .right2 h1 {
           right: 0;
           top: 30%;
@@ -854,6 +858,8 @@ a {
           content: '';
           display: block;
           clear: both; }
+        #blue .inner .box1 .left p {
+          position: static; }
       #blue .inner .box1 .right {
         width: 100%;
         float: none; }
@@ -894,6 +900,8 @@ a {
         float: none;
         height: auto;
         margin-bottom: 40px; }
+        #blue .inner .box2 .right2 p {
+          position: static; }
         #blue .inner .box2 .right2 h1 {
           position: static;
           margin-top: 20px;
@@ -932,8 +940,7 @@ a {
       clear: both; } }
 #banner {
   width: 100%;
-  height: 100vh;
-  padding: 200px 0 100px;
+  padding: 200px 0 250px;
   box-sizing: border-box; }
   #banner .wrap {
     width: 1180px;
@@ -942,16 +949,24 @@ a {
     margin-bottom: 150px;
     text-align: center; }
     #banner .wrap p {
-      font: bold 25px/1 'arial';
-      color: #aaa; }
+      font: bold 30px/1 'Titillium Web', sans-serif;
+      color: #499e65; }
   #banner .banner_content {
     width: 100%;
-    height: 300px;
+    height: 0;
     background: #efefef;
     background: url("../img/banner.jpg") center center;
     background-size: cover;
     background-attachment: fixed; }
+  #banner.on .banner_content {
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: rollDown 0.8s ease-out forwards; }
 
+@keyframes rollDown {
+  0% {
+    height: 0; }
+  100% {
+    height: 350px; } }
 @media screen and (max-width: 1179px) {
   #banner {
     height: auto;
@@ -960,9 +975,7 @@ a {
       width: 90%; } }
 #black {
   width: 100%;
-  height: 100vh;
-  padding: 100px 0;
-  box-sizing: border-box; }
+  padding: 150px 0 250px; }
   #black .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -979,7 +992,8 @@ a {
         clear: both; }
       #black .inner .wrap article {
         float: left;
-        box-sizing: border-box; }
+        position: relative;
+        overflow: hidden; }
         #black .inner .wrap article:nth-of-type(1) {
           width: 380px;
           height: 420px;
@@ -1005,24 +1019,124 @@ a {
         #black .inner .wrap article:nth-of-type(6) {
           width: 780px;
           height: 200px; }
-        #black .inner .wrap article:nth-of-type(1) {
+        #black .inner .wrap article:nth-of-type(1)::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
           background: url("../img/black1.jpg") center;
-          background-size: cover; }
-        #black .inner .wrap article:nth-of-type(2) {
+          background-size: cover;
+          transition: 0.5s;
+          transform: scale(1);
+          z-index: -1; }
+        #black .inner .wrap article:nth-of-type(2)::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
           background: url("../img/black2.jpg") center;
-          background-size: cover; }
-        #black .inner .wrap article:nth-of-type(3) {
+          background-size: cover;
+          transition: 0.5s;
+          transform: scale(1);
+          z-index: -1; }
+        #black .inner .wrap article:nth-of-type(3)::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
           background: url("../img/black3.jpg") center;
-          background-size: cover; }
-        #black .inner .wrap article:nth-of-type(4) {
+          background-size: cover;
+          transition: 0.5s;
+          transform: scale(1);
+          z-index: -1; }
+        #black .inner .wrap article:nth-of-type(4)::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
           background: url("../img/black4.jpg") center;
-          background-size: cover; }
-        #black .inner .wrap article:nth-of-type(5) {
+          background-size: cover;
+          transition: 0.5s;
+          transform: scale(1);
+          z-index: -1; }
+        #black .inner .wrap article:nth-of-type(5)::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
           background: url("../img/black5.jpg") center;
-          background-size: cover; }
-        #black .inner .wrap article:nth-of-type(6) {
+          background-size: cover;
+          transition: 0.5s;
+          transform: scale(1);
+          z-index: -1; }
+        #black .inner .wrap article:nth-of-type(6)::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
           background: url("../img/black6.jpg") center;
-          background-size: cover; }
+          background-size: cover;
+          transition: 0.5s;
+          transform: scale(1);
+          z-index: -1; }
+        #black .inner .wrap article h2 {
+          font: bold 20px/1 'Titillium Web', sans-serif;
+          color: #fff;
+          position: absolute;
+          left: 50%;
+          top: 45%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: 0.5s; }
+        #black .inner .wrap article p {
+          font: bold 16px/1 'Titillium Web', sans-serif;
+          color: #fff;
+          position: absolute;
+          left: 50%;
+          top: 55%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: 0.5s; }
+        #black .inner .wrap article::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          transition: 0.4s;
+          z-index: 1; }
+        #black .inner .wrap article:hover::before {
+          transform: scale(1.1); }
+        #black .inner .wrap article:hover::after {
+          opacity: 1; }
+        #black .inner .wrap article:hover h2 {
+          opacity: 1;
+          z-index: 2; }
+        #black .inner .wrap article:hover p {
+          opacity: 1;
+          z-index: 2; }
 
 @media screen and (max-width: 1179px) {
   #black {
@@ -1074,9 +1188,9 @@ a {
         width: 100%; } }
 #notice {
   width: 100%;
-  height: 100vh;
   position: relative;
-  transition: 0.5s; }
+  transition: 0.5s;
+  padding: 150px 0; }
   #notice::before {
     content: '';
     display: block;
@@ -1103,7 +1217,7 @@ a {
     width: 1180px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding-top: 50vh; }
+    padding-top: 40vh; }
     #notice .inner h1 {
       font: bold 24px/1 'Titillium Web', sans-serif;
       color: #444;
@@ -1188,40 +1302,36 @@ a {
 
 @media screen and (max-width: 1500px) {
   #notice {
-    padding: 80px 0;
-    height: auto; }
+    padding: 150px 0; }
     #notice::after {
       width: 100%; } }
 @media screen and (max-width: 1179px) {
-  #notice {
-    height: auto;
-    padding-bottom: 150px; }
-    #notice::before {
-      height: 70%; }
-    #notice::after {
-      width: 97%;
-      height: 80%; }
-    #notice .inner {
-      width: 90%;
-      padding-top: 250px; }
-      #notice .inner h1 {
-        font: bold 20px/1 'Titillium Web', sans-serif;
-        color: #444;
-        margin-bottom: 50px; }
-      #notice .inner .wrap {
-        position: relative; }
-        #notice .inner .wrap article {
-          float: left;
-          width: 48%;
-          margin-right: 2%;
-          margin-bottom: 40px; }
-          #notice .inner .wrap article:nth-of-type(2) {
-            margin-right: 0; }
-          #notice .inner .wrap article:last-child a {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            text-align: right; } }
+  #notice::before {
+    height: 70%; }
+  #notice::after {
+    width: 97%;
+    height: 80%; }
+  #notice .inner {
+    width: 90%;
+    padding-top: 250px; }
+    #notice .inner h1 {
+      font: bold 20px/1 'Titillium Web', sans-serif;
+      color: #444;
+      margin-bottom: 50px; }
+    #notice .inner .wrap {
+      position: relative; }
+      #notice .inner .wrap article {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: 40px; }
+        #notice .inner .wrap article:nth-of-type(2) {
+          margin-right: 0; }
+        #notice .inner .wrap article:last-child a {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          text-align: right; } }
 @media screen and (max-width: 639px) {
   #notice::after {
     height: 85%; }

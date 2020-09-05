@@ -1,15 +1,27 @@
 #banner {
-    width: 100%; height: 100vh; padding: 200px 0 100px;
+    width: 100%; padding: 200px 0 250px;
     box-sizing: border-box;
 
     .wrap {
         width: 1180px; margin: 0 auto; box-sizing: border-box; margin-bottom: 150px; text-align: center;
-        p {font: bold 25px/1 'arial'; color: #aaa;}
+        p {font: bold 30px/1 'Titillium Web', sans-serif; color: rgb(73, 158, 101);}
     }
 
     .banner_content {
-        width: 100%; height: 300px; background: #efefef; background: url('../img/banner.jpg') center center; background-size: cover; background-attachment: fixed;
+        width: 100%; height: 0; background: #efefef; background: url('../img/banner.jpg') center center; background-size: cover; background-attachment: fixed;
     }
+
+    &.on {
+        .banner_content {
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: rollDown 0.8s ease-out forwards;
+        }
+    }
+}
+
+@keyframes rollDown {
+    0% {height: 0;}
+    100% {height: 350px;}
 }
 
 //tablet

@@ -1,5 +1,5 @@
 #notice {
-    width: 100%; height: 100vh; position: relative; transition: 0.5s;
+    width: 100%; position: relative; transition: 0.5s; padding: 150px 0;
 
     &::before {
         content:''; display: block; position: absolute; left: 0; top: 0; height: 70%; width: 100%; background: url('../img/notice.jpg'); z-index: -2; background-size: cover;
@@ -12,7 +12,7 @@
 
     .inner {
         width: 1180px; margin: 0 auto;  box-sizing: border-box;
-        padding-top: 50vh;
+        padding-top: 40vh;
 
         h1 {font: bold 24px/1 'Titillium Web', sans-serif; color: #444; margin-bottom: 50px;}
 
@@ -87,7 +87,7 @@
 // tablet +
 @media screen and (max-width: 1500px) {
     #notice {
-        padding: 80px 0;  height: auto;
+        padding: 150px 0; 
         &::after {
             width: 100%; 
         }
@@ -97,7 +97,7 @@
 // tablet
 @media screen and (max-width: $tablet) {
     #notice {
-        height: auto; padding-bottom: 150px;
+        
     
         &::before {
             height: 70%;
