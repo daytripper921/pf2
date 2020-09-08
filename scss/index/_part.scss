@@ -5,11 +5,11 @@
         width: 1180px; margin: 0 auto; 
 
         h1 {
-            font: bold 24px/1 'Titillium Web', sans-serif; color: #444; margin-bottom: 50px;
+            font: bold 30px/1 'Titillium Web', sans-serif; color: rgb(41, 121, 87); margin-bottom: 50px; opacity: 0; transform: translateX(-200px); transition: 0.5s;
         }
 
         .wrap {
-            width: 100%;  transition: 0.5s; opacity: 0;
+            width: 100%;  transition: 0.5s; opacity: 0; transform: translateY(200px);
 
             &::after {content:''; display: block; clear: both;}
 
@@ -50,7 +50,10 @@
     }
 
     &.on {
-        .inner .wrap { opacity: 1;}
+        .inner {
+            h1 {opacity: 1; transform: translateX(0);}
+            .wrap { opacity: 1; transform:translateY(0px);}
+        }
     }
 }
 @keyframes clear {

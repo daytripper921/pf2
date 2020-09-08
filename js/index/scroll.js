@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var pos;
-    var base = 200;
+    var base = 400;
 
     setPos();
 
@@ -47,7 +47,7 @@ $(document).ready(function(){
             $('#navi>li').eq(6).children('a').addClass('on');
             $('#black').addClass('on');
         }
-        if(scroll>=pos[7]){
+        if(scroll>=pos[7] - base ){
             $('#navi>li>a').removeClass('on');
             $('#navi>li').eq(7).children('a').addClass('on');
             $('#notice').addClass('on');

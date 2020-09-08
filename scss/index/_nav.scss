@@ -1,12 +1,12 @@
 #navi {
-    position: fixed; right: 40px; top: 50%; transform: translateY(-50%);
+    position: fixed; right: 40px; top: 50%; transform: translateY(-50%); z-index: 8;
 
     li {
         a {
-            width: 8px; height: 8px; border-radius: 50%; border: 1px solid #000; margin-bottom: 15px; display: block;
+            width: 8px; height: 8px; border-radius: 50%; border: 1px solid rgb(79, 187, 142); margin-bottom: 15px; display: block; transition: 0.4s;
 
             &.on {
-                background: #000; height: 25px;  border-radius: 25%;
+                background: rgb(79, 187, 142); height: 25px;  border-radius: 10%;
                 
             }
         }

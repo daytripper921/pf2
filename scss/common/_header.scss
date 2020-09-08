@@ -49,7 +49,7 @@
                             // display: block; background: #fff; color: #555; font: 14px/40px 'Barlow', sans-serif; text-align: center; width: 149px; height: 40px;
 
                             &:hover {
-                                color: darkblue;
+                                color: #1ab67a;
                             }
                         }
                     }
@@ -111,6 +111,9 @@
                         padding-left: 50px;
                         >a {
                             display: block; width: 100%; height: 50px; font: bold 20px/50px 'Titillium Web', sans-serif; color: #fff;
+                            &:hover {
+                                color: rgb(221, 255, 96);
+                            }
                         }
     
                         >ul {
@@ -118,6 +121,10 @@
                             >li {
                                 >a {
                                     display: block; width: 100%; height: 40px; color: #eee; font: 14px/40px 'Titillium Web', sans-serif; box-sizing: border-box; padding: 0 20px;
+
+                                    &:hover {
+                                        color: rgb(230, 255, 139);
+                                    }
                                 }
                             }
                         }
@@ -134,8 +141,11 @@
                     >li {
                         padding-left: 50px;
 
+                      
+
                         >a {
                             display: block; width: 100%; height: 50px; font: 600 20px/50px 'Titillium Web', sans-serif; color: #fff;
+                            
                         }
                     }
                 }

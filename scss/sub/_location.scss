@@ -6,7 +6,7 @@
         >div {
             position: absolute; left: 50%; top: 50%; transform: translate(-50%, -60%);text-align: center;
         
-            span {border-bottom: 2px solid #fff; font: 16px/1 'Open Sans', sans-serif; letter-spacing: 1px; color: #fff; padding-bottom: 5px; text-shadow: 0px 0px 5px rgba(0,0,0,0.8);}
+            span {border-bottom: 2px solid #fff; font: 16px/2 'Open Sans', sans-serif; letter-spacing: 1px; color: #fff; padding-bottom: 5px; text-shadow: 0px 0px 5px rgba(0,0,0,0.8);}
             h1 {font: bold 40px/1 'Titillium Web', sans-serif; color: #fff; margin-top: 20px;  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);}
         }
     }
@@ -18,7 +18,7 @@
     .inner {
         width: 1180px; margin: 0 auto;
 
-        h1 {font: 600 30px/1 'Titillium Web', sans-serif; margin-bottom: 100px; color: #333;}
+        h1 {font: 600 30px/1 'Titillium Web', sans-serif; margin-bottom: 100px; color: rgb(41, 121, 87);}
 
         .wrap {
             width: 100%;
@@ -75,7 +75,7 @@
         .inner {
             width: 90%; 
     
-            h1 {font: 30px/1 'arial'; margin-bottom: 50px;}
+            h1 {font-size: 30px; margin-bottom: 50px;}
     
             .wrap {
                 width: 100%;
@@ -91,7 +91,7 @@
     
                     li {
                         width:100px; height:40px; 
-                        font:bold 12px/40px 'arial'; color: rgb(19, 92, 52); text-align:center;
+                        font:bold 12px/40px 'Nanum Gothic', sans-serif; color: rgb(19, 92, 52); text-align:center;
                         float:left; margin-right:10px; cursor:pointer; 
                         &:hover {
                             border-bottom: 2px solid rgb(176, 233, 202);
@@ -103,8 +103,8 @@
                 }
     
                 .detail {
-                    dt {font: bold 14px/1 'arial'; color: #333; display: inline-block;}
-                    dd {display: inline-block; font: 14px/1 'arial'; color: #333;}
+                    dt {font: bold 14px/1 'Nanum Gothic', sans-serif; color: #333; display: inline-block;}
+                    dd {display: inline-block; font: 14px/1 'Nanum Gothic', sans-serif; color: #333;}
                 }
             }
         }
@@ -117,11 +117,6 @@
         height: 250px;
         .inner {
             width: 90%; 
-    
-            >div {            
-                span {border-bottom: 2px solid #fff; font: 16px/1 'arial'; color: #fff; padding-bottom: 5px; }
-                h1 {font: bold 40px/1 'arial'; color: #fff; margin-top: 20px;}
-            }
         }
     }
 

@@ -2,9 +2,21 @@
     width: 100%; padding: 200px 0 250px;
     box-sizing: border-box;
 
-    .wrap {
-        width: 1180px; margin: 0 auto; box-sizing: border-box; margin-bottom: 150px; text-align: center;
-        p {font: bold 30px/1 'Titillium Web', sans-serif; color: rgb(73, 158, 101);}
+    .inner {
+        width: 1180px; margin: 0 auto; position: relative; margin-bottom: 150px; 
+
+        h1 {
+            width: 100%; position: absolute; left: 50%; transform: translateX(-50%);
+            .reveal {
+                position: relative; overflow: hidden;
+                .txt {
+                    font: bold 30px/1 'Titillium Web', sans-serif; color: rgb(41, 119, 67); text-align: center; opacity: 0;
+                }
+                .mask {
+                    position: absolute; left: 0; top: 0; height: 100%; background: rgb(41, 119, 67); 
+                }
+            }
+        }
     }
 
     .banner_content {
@@ -12,11 +24,25 @@
     }
 
     &.on {
+        .inner {
+            h1 {
+                .reveal {
+                    .txt {opacity: 1; transition-delay: 0.8s;}
+                    .mask {animation: txtMask 1.3s ease-out forwards;}
+                }
+            }
+        }
         .banner_content {
             animation: name duration timing-function delay iteration-count direction fill-mode;
             animation: rollDown 0.8s ease-out forwards;
         }
     }
+}
+
+@keyframes txtMask {
+    0% {width: 0; left: 0;}
+    60% {width: 100%; left: 0;}
+    100% {width: 100%; left: 100%;}
 }
 
 @keyframes rollDown {
@@ -29,7 +55,7 @@
     #banner {
         height: auto; padding: 80px 0;
 
-        .wrap {
+        .inner {
             width: 90%;
         }
     }

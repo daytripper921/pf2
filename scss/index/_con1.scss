@@ -2,7 +2,7 @@
     width: 100%; padding: 150px 0 50px;
 
     .inner {
-        width: 1180px; margin: 0 auto;
+        width: 1180px; margin: 0 auto; overflow: hidden;
 
         .wrap{
             width: 100%; 
@@ -20,14 +20,17 @@
                 }
                 
                 &.txtBox2{
-                    position: relative;
-                    width: 50%; height: 300px; padding-top: 100px; 
+                    position: relative; width: 50%; height: 300px; padding-top: 100px; 
+
                     h2 {font: 24px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 15px; opacity: 0; transition: 0.5s 0.1s; transform: translateY(-100px);}
+
                     p {font: 16px/1 'Open Sans', sans-serif; color: rgb(21, 161, 91); margin-bottom: 20px; opacity: 0; transition: 0.5s; transform: translateY(-100px);}
-                    .pic {position: absolute; right: 60px; top: 30px; width: 150px; height: 150px; background: #999;z-index: -1; transform: translateX(100px); opacity: 0; transition: 0.5s  0.3s;}
+
+                    .pic {position: absolute; right: 60px; top: 30px; width: 150px; height: 150px; background: #20794f; z-index: -1; transform: translateX(100px); opacity: 0; transition: 0.5s  0.3s;}
+
                     a{display: block; width: 100px; height: 30px; font: 16px/30px 'Open Sans', sans-serif; color: rgb(33, 124, 78); border: 1px solid #555; text-align: center; border-radius: 13px;opacity: 0; transition: 0.5s 0.3s;}
 
-                    &::before {content:''; display: block; background: #ddd; width: 60%; height: 60%; position: absolute; right: 5%; bottom: 20%; z-index: -2; transform: translateX(200px); opacity: 0; transition: 0.5s;}
+                    &::before {content:''; display: block; background: #bdd4be86; width: 60%; height: 60%; position: absolute; right: 5%; bottom: 20%; z-index: -2; transform: translateX(200px); opacity: 0; transition: 0.5s;}
                 }
             }
         }
@@ -56,52 +59,21 @@
             width:90%; 
 
             .wrap{
-                article{
-                    
+    
+                article{                    
                     &.txtBox1{
-                        width: 60%; 
-                        h1 {font: 24px/1 'Titillium Web', sans-serif;}
-                        p {font: 16px/1 'Open Sans', sans-serif;}
+                        width: 49%; margin-right: 2%;
+                        h2 {font-size: 24px; }
                     }
-                    &.svg1 {
-                       width: 40%;
-                       svg {
-                        width: 80%; margin-left: 10%; margin-top: 30px;
-                            path {
-                                fill : transparent;
-                                stroke : #99f2c8;
-                                stroke-width:2;
-                                stroke-dasharray: 1747;
-                                stroke-dashoffset: -1747;
-                                transition:stroke-dashoffset 3s,fill 1s 3s;
-                                //transform: scale(0.8);
-                            }
-                        }
-                    }
-                    &.svg2 {
-                        width: 40%;
-                        svg {
-                            width: 80%; margin-left: 0%; margin-top: 20px;
-                            path {
-                                fill : transparent;
-                                stroke : #99f2c8;
-                                stroke-width:2;
-                                stroke-dasharray: 1747;
-                                stroke-dashoffset: -1747;
-                                transition:stroke-dashoffset 3s,fill 1s 3s;
-                                
-                            }
-                        }
-                    }
+                    
                     &.txtBox2{
-                        width: 60%; 
-                        h2 {font: 22px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 15px;}
-                        p {font: 14px/1 'Open Sans', sans-serif; color: #777; margin-bottom: 20px;}
-                        .pic {right: 40px; }    
-                        &::before {right: 0%;}
+                        width: 49%;
+                        .pic {width: 120px; height: 120px; right: 30px;}
+    
                     }
                 }
             }
+            
         }
     }
 }
@@ -113,26 +85,20 @@
         .inner {
            
             .wrap{
-                article{
-                    
+    
+                article{                    
                     &.txtBox1{
-                        width: 100%; height: 200px;
+                      width: 100%;
                     }
-                    &.svg1 {
-                       display: none;
-                    }
-                    &.svg2 {
-                        display: none;
-                    }
+                    
                     &.txtBox2{
-                        width: 100%;  height: 250px;
-                        h2 {font: 22px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 15px;}
-                        p {font: 14px/1 'Open Sans', sans-serif; color: #777; margin-bottom: 20px;}
-                        .pic {right: 40px; }    
-                        &::before {right: 0%;}
+                       width: 100%;
+                       .pic {width: 140px; height: 140px; right: 60px;}
+    
                     }
                 }
             }
+            
         }
     }
 }

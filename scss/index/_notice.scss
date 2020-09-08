@@ -2,7 +2,7 @@
     width: 100%; position: relative; transition: 0.5s; padding: 150px 0;
 
     &::before {
-        content:''; display: block; position: absolute; left: 0; top: 0; height: 70%; width: 100%; background: url('../img/notice.jpg'); z-index: -2; background-size: cover;
+        content:''; display: block; position: absolute; left: 0; top: 0; height: 0%; width: 100%; background: url('../img/notice.jpg'); z-index: -2; background-size: cover;
     }
 
     &::after {
@@ -14,7 +14,7 @@
         width: 1180px; margin: 0 auto;  box-sizing: border-box;
         padding-top: 40vh;
 
-        h1 {font: bold 24px/1 'Titillium Web', sans-serif; color: #444; margin-bottom: 50px;}
+        h1 {font: bold 30px/1 'Titillium Web', sans-serif; color: rgb(41, 121, 87); margin-bottom: 50px; opacity: 0; transform: translateX(-200px); transition: 0.5s;}
 
         .wrap {
             width: 100%; 
@@ -29,19 +29,19 @@
 
                     > .date {
                         padding: 20px 0; border-bottom: 1px solid #000;
-                        >span {font: 600 30px/1 'Titillium Web', sans-serif; color: #444; display: block;margin-bottom: 5px;}
+                        >span {font: 600 30px/1 'Titillium Web', sans-serif; color: #333; display: block;margin-bottom: 5px;}
                     }
 
                     > .text {
                         padding: 20px 0;
-                        .nt_title {font: 600 19px/1 'Titillium Web', sans-serif; color: #444; margin-bottom: 20px;}
+                        .nt_title {font: 600 19px/1 'Titillium Web', sans-serif; color: rgb(48, 114, 87); margin-bottom: 20px;}
                         .nt_detail {font: 16px/1.4 'Open Sans', sans-serif; color: #777; margin-bottom: 30px;}
                         >span {
-                            display: block; width: 30px; height: 1px; background: #444;
+                            display: block; width: 30px; height: 1px; background: rgb(31, 99, 71);
                             position: relative; transition: 0.5s;
 
                             &::after {
-                                content:''; display: block; width: 10px; height: 1px; position: absolute; right: 0; top: 0; background:#444; transform: rotate(-45deg); transform-origin: right top;
+                                content:''; display: block; width: 10px; height: 1px; position: absolute; right: 0; top: 0; background:rgb(31, 99, 71); transform: rotate(-45deg); transform-origin: right top;
                             }
                         }
                     }
@@ -59,7 +59,7 @@
                     a {
                         width: 100%;
                         p:nth-of-type(1) {
-                            display: inline-block; font: bold 20px/1 'Titillium Web', sans-serif; color: green; margin-bottom: 50px;
+                            display: inline-block; font: bold 20px/1 'Titillium Web', sans-serif; color: rgb(41, 121, 87); margin-bottom: 50px;
                         }
                         /*
                         p:nth-of-type(2) {
@@ -82,6 +82,21 @@
 
         }
     }
+
+    &.on {
+
+        &::before {
+            animation: rollDown2 1s ease-out forwards;
+        }
+        .inner {
+            h1 {opacity: 1; transform: translateX(0);}
+        }
+    }
+}
+
+@keyframes rollDown2 {
+    0% {height: 0;}
+    100% {height: 70%;}
 }
 
 // tablet +
@@ -112,7 +127,7 @@
             width:90%; 
             padding-top: 250px;
     
-            h1 {font: bold 20px/1 'Titillium Web', sans-serif; color: #444; margin-bottom: 50px;}
+            h1 {font: bold 20px/1 'Titillium Web', sans-serif; margin-bottom: 50px;}
     
             .wrap {position: relative;
                 article {
