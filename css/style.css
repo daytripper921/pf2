@@ -626,6 +626,41 @@ a {
         #tab .inner .wrap > div > img {
           width: auto;
           height: 80%; } }
+@media screen and (max-width: 430px) {
+  #tab {
+    padding: 80px 0; }
+    #tab .inner .wrap {
+      width: 100%;
+      position: relative;
+      height: 100%;
+      margin-top: 20px; }
+      #tab .inner .wrap > h2 {
+        display: none; }
+      #tab .inner .wrap .tab_btns {
+        width: 100%;
+        height: 40px;
+        padding-top: 0px;
+        z-index: 3; }
+        #tab .inner .wrap .tab_btns li {
+          width: calc(100% / 3);
+          height: 100%;
+          float: left; }
+          #tab .inner .wrap .tab_btns li > a {
+            width: 100%;
+            height: 40px;
+            display: block;
+            font: bold 13px/40px 'arial', sans-serif;
+            text-indent: 0px;
+            text-align: center; }
+      #tab .inner .wrap > div {
+        width: 100%;
+        margin-left: 0;
+        padding: 120px 50px 50px 20px; }
+        #tab .inner .wrap > div h2 {
+          font-size: 30px; }
+        #tab .inner .wrap > div > img {
+          width: auto;
+          height: 80%; } }
 #blue {
   width: 100%;
   padding: 150px 0; }
@@ -2229,6 +2264,7 @@ textarea {
       width: 90px;
       height: 30px;
       font-size: 14px;
+      line-height: 30px;
       color: #fff;
       text-align: center;
       cursor: pointer; }
@@ -2248,6 +2284,23 @@ textarea {
   .community .inner table tr td:nth-of-type(3) {
     width: 0%;
     display: none; } }
+@media screen and (max-width: 445px) {
+  .community .inner .searchBox {
+    padding: 50px 0 50px 0; }
+    .community .inner .searchBox::after {
+      display: block;
+      content: '';
+      clear: both; }
+    .community .inner .searchBox label {
+      display: none; }
+    .community .inner .searchBox input[type=text] {
+      width: 60%;
+      float: left;
+      margin-right: 5%;
+      box-sizing: border-box; }
+    .community .inner .searchBox input[type=submit] {
+      width: 35%;
+      box-sizing: border-box; } }
 #join_visual {
   width: 100%;
   background: url("../img/join.jpg") no-repeat center center;
@@ -2553,6 +2606,11 @@ textarea {
     padding: 100px 0; }
     .login .inner {
       width: 90%; } }
+@media screen and (max-width: 639px) {
+  .login .inner form {
+    width: 100%; }
+    .login .inner form .btn-area {
+      width: 100%; } }
 #gall_living_visual {
   width: 100%;
   background: url("../img/living.jpg") no-repeat center center;
@@ -3084,6 +3142,16 @@ textarea {
   width: 100%;
   padding: 150px 0;
   overflow: hidden; }
+  .aboutus::before {
+    content: '';
+    display: block;
+    width: 100%;
+    background: #9cbbaf8e;
+    height: 58%;
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    z-index: -1; }
   .aboutus .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -3100,16 +3168,6 @@ textarea {
         margin-bottom: 50px;
         color: #267255;
         text-align: center; }
-      .aboutus .inner #value::before {
-        content: '';
-        display: block;
-        width: 150%;
-        background: #9cbbaf8e;
-        height: 80%;
-        position: absolute;
-        left: -20%;
-        top: 15%;
-        z-index: -1; }
       .aboutus .inner #value .value_inner {
         width: 100%;
         padding: 50px 0; }
@@ -3213,6 +3271,10 @@ textarea {
 
   .aboutus {
     padding: 100px 0; }
+    .aboutus::before {
+      height: 80%;
+      left: 0%;
+      top: 70%; }
     .aboutus .inner {
       width: 90%; }
       .aboutus .inner h1 {
@@ -3222,9 +3284,6 @@ textarea {
         margin-bottom: 250px; }
         .aboutus .inner #value h2 {
           font-size: 30px; }
-        .aboutus .inner #value::before {
-          height: 94%;
-          top: 9%; }
         .aboutus .inner #value .value_inner .wrap article {
           width: 45%;
           margin-right: 10%;
@@ -3248,25 +3307,38 @@ textarea {
           .aboutus .inner #partners .partners_inner .wrap article:nth-child(2n) {
             margin-right: 0; } }
 @media screen and (max-width: 639px) {
-  .aboutus .inner #value {
-    margin-bottom: 250px; }
-    .aboutus .inner #value::before {
-      height: 12%;
-      top: 89%; }
-    .aboutus .inner #value .value_inner .wrap article {
-      width: 100%;
-      margin-right: 0%; }
-      .aboutus .inner #value .value_inner .wrap article .pic {
-        height: 250px;
-        border-radius: 10px; }
-  .aboutus .inner #partners .partners_inner .wrap {
-    width: 90%; }
-    .aboutus .inner #partners .partners_inner .wrap article {
-      width: 100%;
-      margin-right: 0%; }
-      .aboutus .inner #partners .partners_inner .wrap article:nth-child(3n) {
+  .aboutus {
+    position: relative; }
+    .aboutus::before {
+      display: none; }
+    .aboutus .inner #value {
+      margin-bottom: 250px; }
+      .aboutus .inner #value .value_inner {
+        overflow: hidden; }
+        .aboutus .inner #value .value_inner .wrap article {
+          width: 100%;
+          margin-right: 0%; }
+          .aboutus .inner #value .value_inner .wrap article .pic {
+            height: 250px;
+            border-radius: 10px; }
+        .aboutus .inner #value .value_inner::before {
+          content: '';
+          display: block;
+          width: 150%;
+          background: #9cbbaf8e;
+          height: 10%;
+          position: absolute;
+          left: -10%;
+          top: 90%;
+          z-index: -1; }
+    .aboutus .inner #partners .partners_inner .wrap {
+      width: 90%; }
+      .aboutus .inner #partners .partners_inner .wrap article {
+        width: 100%;
         margin-right: 0%; }
-      .aboutus .inner #partners .partners_inner .wrap article:nth-child(2n) {
-        margin-right: 0; } }
+        .aboutus .inner #partners .partners_inner .wrap article:nth-child(3n) {
+          margin-right: 0%; }
+        .aboutus .inner #partners .partners_inner .wrap article:nth-child(2n) {
+          margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

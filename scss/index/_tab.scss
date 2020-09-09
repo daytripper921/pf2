@@ -155,4 +155,45 @@
         }
     }
 }
+
+
+//smaller
+@media screen and (max-width:430px) {
+    #tab {
+        padding: 80px 0;
+        .inner {
+            .wrap {
+                width: 100%; position: relative; height: 100%; margin-top: 20px;
+
+                >h2 {
+                    display: none;
+                }
+    
+                .tab_btns {
+                   width: 100%; height: 40px; padding-top: 0px;  z-index: 3;
+    
+                    li {
+                        width: calc(100% / 3); height: 100%; float: left;
+    
+                        >a {
+                            width: 100%; height: 40px; display: block; font: bold 13px/40px 'arial', sans-serif; text-indent: 0px; text-align: center;
+                        }
+                    }
+                }
+    
+                >div {
+                    width: 100%; margin-left: 0; padding: 120px 50px 50px 20px;
+    
+                    h2 {
+                        font-size: 30px;
+                    }
+                    >img{
+                        width: auto; height: 80%;
+                    }
+    
+                } 
+            }
+        }
+    }
+}
  

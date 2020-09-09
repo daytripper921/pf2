@@ -91,3 +91,15 @@
         }
     }
 }
+
+
+// mobile
+@media screen and (max-width: $mobile) {
+    .login .inner {
+        form {
+            width: 100%;
+
+            .btn-area {width: 100%;}
+        }
+    }
+}
