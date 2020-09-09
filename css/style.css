@@ -1610,7 +1610,7 @@ a {
           top: 0;
           transform: rotate(-405deg);
           background: #2d4553; }
-    #header .inner #gnbMo {
+    #header .inner #gnbMo .gnbMo_right {
       z-index: 7;
       position: fixed;
       right: -300px;
@@ -1619,23 +1619,21 @@ a {
       height: 100%;
       background: #4d826c;
       transition: 0.5s; }
-      #header .inner #gnbMo.on {
-        right: 0; }
-      #header .inner #gnbMo .gnbMo_list > ul {
+      #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul {
         padding-top: 80px; }
-        #header .inner #gnbMo .gnbMo_list > ul > li {
+        #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li {
           padding-left: 50px; }
-          #header .inner #gnbMo .gnbMo_list > ul > li > a {
+          #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > a {
             display: block;
             width: 100%;
             height: 50px;
             font: bold 20px/50px 'Titillium Web', sans-serif;
             color: #fff; }
-            #header .inner #gnbMo .gnbMo_list > ul > li > a:hover {
+            #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > a:hover {
               color: #ddff60; }
-          #header .inner #gnbMo .gnbMo_list > ul > li > ul {
+          #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > ul {
             display: none; }
-            #header .inner #gnbMo .gnbMo_list > ul > li > ul > li > a {
+            #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > ul > li > a {
               display: block;
               width: 100%;
               height: 40px;
@@ -1643,11 +1641,11 @@ a {
               font: 14px/40px 'Titillium Web', sans-serif;
               box-sizing: border-box;
               padding: 0 20px; }
-              #header .inner #gnbMo .gnbMo_list > ul > li > ul > li > a:hover {
+              #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > ul > li > a:hover {
                 color: #e6ff8b; }
-      #header .inner #gnbMo .gnbMo_util > ul > li {
+      #header .inner #gnbMo .gnbMo_right .gnbMo_util > ul > li {
         padding-left: 50px; }
-        #header .inner #gnbMo .gnbMo_util > ul > li > a {
+        #header .inner #gnbMo .gnbMo_right .gnbMo_util > ul > li > a {
           display: block;
           width: 100%;
           height: 50px;
@@ -1713,7 +1711,18 @@ a {
             top: 0;
             transform: rotate(-45deg);
             background: #fff; }
-      #header .inner #gnbMo {
+      #header .inner #gnbMo.on .gnbMo_left {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 6;
+        display: block; }
+      #header .inner #gnbMo.on .gnbMo_right {
+        right: 0; }
+      #header .inner #gnbMo .gnbMo_right {
         z-index: 7;
         position: fixed;
         right: -300px;
@@ -1722,21 +1731,21 @@ a {
         height: 100%;
         background: #4d826c;
         transition: 0.5s; }
-        #header .inner #gnbMo.on {
-          right: 0; }
-        #header .inner #gnbMo .gnbMo_list > ul {
+        #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul {
           padding-top: 80px; }
-          #header .inner #gnbMo .gnbMo_list > ul > li {
+          #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li {
             padding-left: 50px; }
-            #header .inner #gnbMo .gnbMo_list > ul > li > a {
+            #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > a {
               display: block;
               width: 100%;
               height: 50px;
               font: bold 20px/50px 'Titillium Web', sans-serif;
               color: #fff; }
-            #header .inner #gnbMo .gnbMo_list > ul > li > ul {
+              #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > a:hover {
+                color: #ddff60; }
+            #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > ul {
               display: none; }
-              #header .inner #gnbMo .gnbMo_list > ul > li > ul > li > a {
+              #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > ul > li > a {
                 display: block;
                 width: 100%;
                 height: 40px;
@@ -1744,14 +1753,18 @@ a {
                 font: 14px/40px 'Titillium Web', sans-serif;
                 box-sizing: border-box;
                 padding: 0 20px; }
-        #header .inner #gnbMo .gnbMo_util > ul > li {
+                #header .inner #gnbMo .gnbMo_right .gnbMo_list > ul > li > ul > li > a:hover {
+                  color: #e6ff8b; }
+        #header .inner #gnbMo .gnbMo_right .gnbMo_util > ul > li {
           padding-left: 50px; }
-          #header .inner #gnbMo .gnbMo_util > ul > li > a {
+          #header .inner #gnbMo .gnbMo_right .gnbMo_util > ul > li > a {
             display: block;
             width: 100%;
             height: 50px;
-            font: bold 20px/50px 'Titillium Web', sans-serif;
-            color: #fff; } }
+            font: 600 20px/50px 'Titillium Web', sans-serif;
+            color: #fff; }
+            #header .inner #gnbMo .gnbMo_right .gnbMo_util > ul > li > a:hover {
+              color: #e6ff8b; } }
 #footer {
   width: 100%;
   background: #bdcebe; }

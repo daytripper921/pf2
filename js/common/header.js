@@ -29,15 +29,20 @@ $(document).ready(function(){
         }
     });
 
+    $('.gnbMo_left').on('click', function(){
+
+        $('#gnbMo').removeClass('on');
+        $('html').css({overflow : 'visible'});
+        $('.btnCall').removeClass('on');
+    });
+
     //mobile ul li
-    $('#gnbMo>.gnbMo_list>ul>li>a').on('click', function(){
+    $('#gnbMo>.gnbMo_right>.gnbMo_list>ul>li>a').on('click', function(){
         var opened = $(this).hasClass('on');
 
         //all close
-        $('#gnbMo>.gnbMo_list>ul>li>a').removeClass('on');
-        $('#gnbMo>.gnbMo_list>ul>li>ul').slideUp();
-
-       
+        $('#gnbMo>.gnbMo_right>.gnbMo_list>ul>li>a').removeClass('on');
+        $('#gnbMo>.gnbMo_right>.gnbMo_list>ul>li>ul').slideUp();
 
         if(opened){
             $(this).removeClass('on');
