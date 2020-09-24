@@ -2,7 +2,7 @@
     width: 100%; padding: 150px 0; 
 
     .inner {
-        width: 1180px; margin: 0 auto; 
+        width: 1180px; margin: 0 auto; overflow: hidden;
 
         h1 {
             font: bold 30px/1 'Titillium Web', sans-serif; color: rgb(41, 121, 87); margin-bottom: 50px; opacity: 0; transform: translateX(-200px); transition: 0.5s;
@@ -14,23 +14,23 @@
             &::after {content:''; display: block; clear: both;}
 
             li {
-                float: left; width: 280px; margin-right: 20px; transition: 0.3s; box-sizing: border-box; background: #999; height: 620px; position: relative; padding: 300px 50px 50px; cursor: pointer;
+                float: left; width: 280px; margin-right: 20px; transition: 0.3s; box-sizing: border-box; height: 620px; position: relative; padding: 300px 50px 50px; cursor: pointer;
 
                 &:last-child {margin-right: 0;}
 
                 .list_wrap {
-                    visibility: hidden; opacity: 0; z-index: 1;
+                    visibility: hidden; opacity: 0; z-index: 1;transition: 0.3s;
                     h2 {font: bold 32px/1 'Titillium Web', sans-serif; color: #fff; margin-bottom: 10px; text-shadow: 5px 5px 10px rgba(0,0,0,0.4);}
                     p {font: 18px/1.4 'Titillium Web', sans-serif; color: #fff; margin-bottom: 10px;text-shadow: 5px 5px 10px rgba(0,0,0,0.4);}
                     a {display: block; width: 150px; height: 35px; font: 14px/35px 'Open Sans', sans-serif; color: #fff; border: 1px solid #fff; text-align: center; text-shadow: 5px 5px 10px rgba(0,0,0,0.6); box-shadow: 5px 5px 10px rgba(0,0,0,0.4);}
                 }
 
                 &.active {
-                    width: 580px; background: #555;
+                    width: 580px;
                     animation: clear 1s forwards;
                     
                     > .list_wrap { 
-                        visibility: visible;  transition: 0.3s; opacity: 1;
+                        visibility: visible; opacity: 1;
                     }
                 }
 

@@ -33,9 +33,9 @@
                     }
 
                     > .text {
-                        padding: 20px 0;
+                        padding: 20px 0; 
                         .nt_title {font: 600 19px/1 'Titillium Web', sans-serif; color: rgb(48, 114, 87); margin-bottom: 20px;}
-                        .nt_detail {font: 16px/1.4 'Open Sans', sans-serif; color: #777; margin-bottom: 30px;}
+                        .nt_detail {font: 16px/1.4 'Open Sans', sans-serif; color: #777; margin-bottom: 30px; height: 90px; box-sizing: border-box;}
                         >span {
                             display: block; width: 30px; height: 1px; background: rgb(31, 99, 71);
                             position: relative; transition: 0.5s;
@@ -56,9 +56,9 @@
 
                 &:last-child {
                     margin-right: 0;
-                    a {
+                    >a {
                         width: 100%;
-                        p:nth-of-type(1) {
+                        >p {
                             display: inline-block; font: bold 20px/1 'Titillium Web', sans-serif; color: rgb(41, 121, 87); margin-bottom: 50px;
                         }
                         /*
@@ -132,6 +132,9 @@
             .wrap {position: relative;
                 article {
                     float: left; width: 48%; margin-right: 2%; margin-bottom: 40px;
+
+                    >a >.text .nt_detail {height: 70px;}
+
                     &:nth-of-type(2) { margin-right: 0;}
                         
                     &:last-child {
@@ -160,21 +163,21 @@
                     
     
                    >a {
-                    > .date {
-                        padding: 20px 0; border-bottom: 1px solid #000;
-                        > span {
-                           color: #444; display: inline-block;
+                        > .date {
+                            padding: 20px 0; border-bottom: 1px solid #000;
+                            > span {
+                            color: #444; display: inline-block;
 
 
-                            &:nth-of-type(2) {
-                                &::before {content:'/ ';}
+                                &:nth-of-type(2) {
+                                    &::before {content:'/ ';}
 
-                                font-size: 25px; color: #777;
+                                    font-size: 25px; color: #777;
+                                }
                             }
                         }
+                        >.text .nt_detail {height: 60px;}
                     }
-    
-                   }
                  
                 }
     

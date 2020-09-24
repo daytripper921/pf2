@@ -5,7 +5,7 @@
     .inner {
         width: 1180px; margin: 0 auto; position: relative; margin-bottom: 150px; 
 
-        h1 {
+        .textArea {
             width: 100%; position: absolute; left: 50%; transform: translateX(-50%);
             .reveal {
                 position: relative; overflow: hidden;
@@ -25,7 +25,7 @@
 
     &.on {
         .inner {
-            h1 {
+            .textArea {
                 .reveal {
                     .txt {opacity: 1; transition-delay: 0.8s;}
                     .mask {animation: txtMask 1.3s ease-out forwards;}

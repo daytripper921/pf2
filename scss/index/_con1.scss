@@ -14,19 +14,21 @@
                 
                 &.txtBox1{
                     transform: translateX(-200px); opacity: 0; transition: 0.5s;
-                    width: 50%; height: 300px; margin-bottom: 40px; padding-top: 100px;
-                    h2 {font: 28px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 20px;}
+                    width: 49%; height: 300px; margin-bottom: 40px; padding-top: 100px; margin-right: 2%;
+                    h2 {font: 28px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 15px;}
                     p {font: 20px/1 'Open Sans', sans-serif; color: rgb(21, 161, 91);}
                 }
                 
                 &.txtBox2{
-                    position: relative; width: 50%; height: 300px; padding-top: 100px; 
+                    position: relative; width: 49%; height: 300px; padding-top: 100px; 
 
                     h2 {font: 24px/1 'Titillium Web', sans-serif; color: #333; margin-bottom: 15px; opacity: 0; transition: 0.5s 0.1s; transform: translateY(-100px);}
 
                     p {font: 16px/1 'Open Sans', sans-serif; color: rgb(21, 161, 91); margin-bottom: 20px; opacity: 0; transition: 0.5s; transform: translateY(-100px);}
 
-                    .pic {position: absolute; right: 60px; top: 30px; width: 150px; height: 150px; background: #20794f; z-index: -1; transform: translateX(100px); opacity: 0; transition: 0.5s  0.3s;}
+                    .pic {
+                        background:url('../img/gi_logo.png') no-repeat; background-size: contain; position: absolute; right: 60px; top: 30px; width: 150px; height: 150px; z-index: -1; transform: translateX(100px); opacity: 0; transition: 0.5s  0.3s;
+                    }
 
                     a{display: block; width: 100px; height: 30px; font: 16px/30px 'Open Sans', sans-serif; color: rgb(33, 124, 78); border: 1px solid #555; text-align: center; border-radius: 13px;opacity: 0; transition: 0.5s 0.3s;}
 

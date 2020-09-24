@@ -176,11 +176,12 @@ a {
         #visual .inner .slideshow .indicator a {
           float: left;
           display: block;
-          width: 50px;
-          height: 5px;
+          width: 10px;
+          height: 10px;
           background: rgba(0, 0, 0, 0.4);
           text-indent: -99999px;
-          margin-right: 10px; }
+          margin-right: 20px;
+          border-radius: 50%; }
           #visual .inner .slideshow .indicator a.active {
             background: #fff; }
           #visual .inner .slideshow .indicator a:last-of-type {
@@ -205,12 +206,12 @@ a {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 1px solid #4fbb8e;
+    border: 1px solid #044127;
     margin-bottom: 15px;
     display: block;
     transition: 0.4s; }
     #navi li a.on {
-      background: #4fbb8e;
+      background: #044127;
       height: 25px;
       border-radius: 10%; }
 
@@ -237,20 +238,21 @@ a {
           transform: translateX(-200px);
           opacity: 0;
           transition: 0.5s;
-          width: 50%;
+          width: 49%;
           height: 300px;
           margin-bottom: 40px;
-          padding-top: 100px; }
+          padding-top: 100px;
+          margin-right: 2%; }
           #con1 .inner .wrap article.txtBox1 h2 {
             font: 28px/1 'Titillium Web', sans-serif;
             color: #333;
-            margin-bottom: 20px; }
+            margin-bottom: 15px; }
           #con1 .inner .wrap article.txtBox1 p {
             font: 20px/1 'Open Sans', sans-serif;
             color: #15a15b; }
         #con1 .inner .wrap article.txtBox2 {
           position: relative;
-          width: 50%;
+          width: 49%;
           height: 300px;
           padding-top: 100px; }
           #con1 .inner .wrap article.txtBox2 h2 {
@@ -268,12 +270,13 @@ a {
             transition: 0.5s;
             transform: translateY(-100px); }
           #con1 .inner .wrap article.txtBox2 .pic {
+            background: url("../img/gi_logo.png") no-repeat;
+            background-size: contain;
             position: absolute;
             right: 60px;
             top: 30px;
             width: 150px;
             height: 150px;
-            background: #20794f;
             z-index: -1;
             transform: translateX(100px);
             opacity: 0;
@@ -351,7 +354,8 @@ a {
   padding: 150px 0; }
   #part .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden; }
     #part .inner h1 {
       font: bold 30px/1 'Titillium Web', sans-serif;
       color: #297957;
@@ -374,7 +378,6 @@ a {
         margin-right: 20px;
         transition: 0.3s;
         box-sizing: border-box;
-        background: #999;
         height: 620px;
         position: relative;
         padding: 300px 50px 50px;
@@ -384,7 +387,8 @@ a {
         #part .inner .wrap li .list_wrap {
           visibility: hidden;
           opacity: 0;
-          z-index: 1; }
+          z-index: 1;
+          transition: 0.3s; }
           #part .inner .wrap li .list_wrap h2 {
             font: bold 32px/1 'Titillium Web', sans-serif;
             color: #fff;
@@ -407,11 +411,9 @@ a {
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); }
         #part .inner .wrap li.active {
           width: 580px;
-          background: #555;
           animation: clear 1s forwards; }
           #part .inner .wrap li.active > .list_wrap {
             visibility: visible;
-            transition: 0.3s;
             opacity: 1; }
         #part .inner .wrap li:nth-of-type(1) {
           background: url("../img/part1.jpg");
@@ -621,7 +623,7 @@ a {
       #tab .inner span {
         font-size: 14px; }
       #tab .inner .wrap > h2 {
-        font-size: 17px;
+        font-size: 25px;
         top: 15%;
         left: 11%; }
       #tab .inner .wrap .tab_btns {
@@ -632,7 +634,7 @@ a {
           height: 50px;
           box-sizing: border-box; }
           #tab .inner .wrap .tab_btns li > a {
-            font-size: 14px;
+            font-size: 18px;
             text-indent: 20px; }
       #tab .inner .wrap > div {
         width: 75%;
@@ -729,7 +731,7 @@ a {
         font: 14px/1.4 'Titillium Web', sans-serif;
         position: absolute;
         left: 0;
-        top: 15%;
+        top: 16%;
         color: #222;
         opacity: 0;
         transform: translateY(-200px);
@@ -828,7 +830,7 @@ a {
         display: block;
         clear: both; }
       #blue .inner .box2 .left2 {
-        width: 80%;
+        width: 79.9%;
         box-sizing: border-box;
         float: left;
         position: relative;
@@ -967,7 +969,7 @@ a {
         margin-bottom: 40px; }
         #blue .inner .box1 .left h1 {
           position: static;
-          margin-top: 20px;
+          margin-top: 10px;
           content: '';
           display: block;
           clear: both; }
@@ -980,10 +982,10 @@ a {
           width: calc((100% / 2) * 6);
           margin-left: calc(-100% / 2); }
         #blue .inner .box1 .right > .prev {
-          left: -25px;
+          left: 0px;
           transform: translateY(-50%); }
         #blue .inner .box1 .right > .next {
-          right: -25px;
+          right: 0;
           transform: translateY(-50%); }
       #blue .inner .box2 .left2 {
         width: 100%;
@@ -1003,10 +1005,10 @@ a {
               transform: rotate(0) scale(1.2);
               color: #fff; }
         #blue .inner .box2 .left2 > .orgPrev {
-          left: -25px;
+          left: 0px;
           transform: translateY(-50%); }
         #blue .inner .box2 .left2 > .orgNext {
-          right: -25px;
+          right: 0px;
           transform: translateY(-50%); }
       #blue .inner .box2 .right2 {
         width: 100%;
@@ -1017,7 +1019,7 @@ a {
           position: static; }
         #blue .inner .box2 .right2 h1 {
           position: static;
-          margin-top: 20px;
+          margin-top: 10px;
           content: '';
           display: block;
           clear: both; } }
@@ -1060,20 +1062,20 @@ a {
     margin: 0 auto;
     position: relative;
     margin-bottom: 150px; }
-    #banner .inner h1 {
+    #banner .inner .textArea {
       width: 100%;
       position: absolute;
       left: 50%;
       transform: translateX(-50%); }
-      #banner .inner h1 .reveal {
+      #banner .inner .textArea .reveal {
         position: relative;
         overflow: hidden; }
-        #banner .inner h1 .reveal .txt {
+        #banner .inner .textArea .reveal .txt {
           font: bold 30px/1 'Titillium Web', sans-serif;
           color: #297743;
           text-align: center;
           opacity: 0; }
-        #banner .inner h1 .reveal .mask {
+        #banner .inner .textArea .reveal .mask {
           position: absolute;
           left: 0;
           top: 0;
@@ -1086,10 +1088,10 @@ a {
     background: url("../img/banner.jpg") center center;
     background-size: cover;
     background-attachment: fixed; }
-  #banner.on .inner h1 .reveal .txt {
+  #banner.on .inner .textArea .reveal .txt {
     opacity: 1;
     transition-delay: 0.8s; }
-  #banner.on .inner h1 .reveal .mask {
+  #banner.on .inner .textArea .reveal .mask {
     animation: txtMask 1.3s ease-out forwards; }
   #banner.on .banner_content {
     animation: name duration timing-function delay iteration-count direction fill-mode;
@@ -1445,7 +1447,9 @@ a {
             #notice .inner .wrap article > a > .text .nt_detail {
               font: 16px/1.4 'Open Sans', sans-serif;
               color: #777;
-              margin-bottom: 30px; }
+              margin-bottom: 30px;
+              height: 90px;
+              box-sizing: border-box; }
             #notice .inner .wrap article > a > .text > span {
               display: block;
               width: 30px;
@@ -1470,7 +1474,7 @@ a {
             transform: rotate(45deg); }
         #notice .inner .wrap article:last-child {
           margin-right: 0; }
-          #notice .inner .wrap article:last-child a {
+          #notice .inner .wrap article:last-child > a {
             width: 100%;
             /*
             p:nth-of-type(2) {
@@ -1487,7 +1491,7 @@ a {
                 }
             }
             */ }
-            #notice .inner .wrap article:last-child a p:nth-of-type(1) {
+            #notice .inner .wrap article:last-child > a > p {
               display: inline-block;
               font: bold 20px/1 'Titillium Web', sans-serif;
               color: #297957;
@@ -1527,6 +1531,8 @@ a {
         width: 48%;
         margin-right: 2%;
         margin-bottom: 40px; }
+        #notice .inner .wrap article > a > .text .nt_detail {
+          height: 70px; }
         #notice .inner .wrap article:nth-of-type(2) {
           margin-right: 0; }
         #notice .inner .wrap article:last-child a {
@@ -1550,9 +1556,11 @@ a {
           font-size: 25px;
           color: #777; }
           #notice .inner .wrap article > a > .date > span:nth-of-type(2)::before {
-            content: '/ '; } }
+            content: '/ '; }
+    #notice .inner .wrap article > a > .text .nt_detail {
+      height: 60px; } }
 /* skip navigation */
-#skip_navi a {
+#skipNavi a {
   display: block;
   position: fixed;
   width: 100%;
@@ -1564,7 +1572,7 @@ a {
   top: -50px;
   left: 0;
   z-index: 200; }
-  #skip_navi a.on {
+  #skipNavi a.on {
     top: 0; }
 
 #header {

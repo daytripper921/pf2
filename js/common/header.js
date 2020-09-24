@@ -5,11 +5,11 @@ $(document).ready(function(){
 
    
     //skip_navi
-    $('#skip_navi a').on('focusin', function(){
+    $('#skipNavi a').on('focusin', function(){
         $(this).addClass('on');
     })
 
-    $('#skip_navi a').on('focusout', function(){
+    $('#skipNavi a').on('focusout', function(){
         $(this).removeClass('on');
     })
 
@@ -63,6 +63,18 @@ $(document).ready(function(){
             //mobile
             $('#gnbMo').removeClass('on');
             $('.btnCall').removeClass('on');
+
+            //focus
+            $('#gnb>li>a').on('focusin', function(){
+                $('#gnb>li>ul').stop().slideDown();
+                $('.bgGnb').stop().slideDown();
+            });
+
+            $('#gnb li').last('a').last().on('focusout', function(){
+                $('#gnb').find('ul').stop().slideUp();
+                $('.bgGnb').stop().slideUp();
+            });
+
         } else {
             $('#header').off('mouseenter');
             $('#header').off('mouseleave');

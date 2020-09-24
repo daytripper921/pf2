@@ -38,7 +38,7 @@ $(document).ready(function(){
         //console.log(currentIndex);
 
         updateNav(); //처음 or 마지막 슬라이드인지 검사 + 인디케이터 active 추가
-     }//gotoslide
+    }//gotoslide
 
     function updateNav(){
         var navPrev = nav.find('.visual_prev');
