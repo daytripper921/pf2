@@ -23,7 +23,9 @@ a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  padding: 0 20px;
+  box-sizing: border-box; }
   .intro video {
     position: absolute;
     left: 0;
@@ -33,15 +35,16 @@ a {
     height: 100%; }
   .intro .txt {
     z-index: 1;
-    max-width: 1180px;
     margin: 0 auto; }
     .intro .txt p {
-      font-size: 4.5em;
+      font-size: 90px;
       color: #fff;
       margin-bottom: 20px;
-      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); }
+      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+      font-family: 'Titillium Web';
+      letter-spacing: 2px; }
     .intro .txt a {
-      font: 25px/40px 'arial';
+      font: 25px/40px 'Titillium Web';
       color: #fff;
       display: block;
       border: 1px solid #fff;
@@ -50,8 +53,20 @@ a {
       text-align: center;
       justify-content: center;
       margin: 0 auto;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      transition: 0.5s; }
+      .intro .txt a:hover {
+        background: rgba(255, 255, 255, 0.384); }
 
+@media screen and (max-width: 1179px) {
+  .intro .txt p {
+    font-size: 60px;
+    letter-spacing: 1px; } }
+@media screen and (max-width: 639px) {
+  .intro .txt p {
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center; } }
 #visual {
   width: 100%; }
   #visual .inner {
@@ -1995,10 +2010,6 @@ a {
       color: #297957; }
     .location .inner .wrap {
       width: 100%; }
-      .location .inner .wrap #map {
-        width: 100%;
-        height: 500px;
-        background: #000; }
       .location .inner .wrap #branch {
         margin-top: 20px;
         margin-bottom: 40px; }
@@ -2052,10 +2063,6 @@ a {
         margin-bottom: 50px; }
       .location .inner .wrap {
         width: 100%; }
-        .location .inner .wrap #map {
-          width: 100%;
-          height: 500px;
-          background: #000; }
         .location .inner .wrap #branch {
           margin-top: 20px;
           margin-bottom: 40px; }
@@ -2078,12 +2085,10 @@ a {
               border-bottom: 2px solid #37af6d; }
         .location .inner .wrap .detail dt {
           font: bold 14px/1 'Nanum Gothic', sans-serif;
-          color: #333;
           display: inline-block; }
         .location .inner .wrap .detail dd {
           display: inline-block;
-          font: 14px/1 'Nanum Gothic', sans-serif;
-          color: #333; } }
+          font: 14px/1 'Nanum Gothic', sans-serif; } }
 @media screen and (max-width: 639px) {
   #location_visual {
     height: 250px; }

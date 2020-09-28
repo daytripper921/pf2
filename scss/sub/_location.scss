@@ -23,13 +23,6 @@
         .wrap {
             width: 100%;
 
-            
-                        
-            #map {
-                width:100%; height:500px; background:#000;
-                
-            }
-
             #branch {
                 margin-top:20px; margin-bottom: 40px;
 
@@ -79,11 +72,7 @@
     
             .wrap {
                 width: 100%;
-                #map {
-                    width:100%; height:500px; background:#000;
-                    
-                }
-    
+                 
                 #branch {
                     margin-top:20px; margin-bottom: 40px;
     
@@ -103,8 +92,8 @@
                 }
     
                 .detail {
-                    dt {font: bold 14px/1 'Nanum Gothic', sans-serif; color: #333; display: inline-block;}
-                    dd {display: inline-block; font: 14px/1 'Nanum Gothic', sans-serif; color: #333;}
+                    dt {font: bold 14px/1 'Nanum Gothic', sans-serif; display: inline-block;}
+                    dd {display: inline-block; font: 14px/1 'Nanum Gothic', sans-serif; }
                 }
             }
         }

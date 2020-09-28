@@ -1,106 +1,38 @@
-window.onload = function(){
+$(document).ready(function(){
 
     var btn = $('#branch li');
-
-    var mapContainer = document.getElementById('map'); 
-    var mapOption = { 
-        center: new kakao.maps.LatLng(37.4970974,127.0272374), 
-        level: 4 
-    };
-    var map = new kakao.maps.Map(mapContainer, mapOption); 
-
-
-    var markerOptions = [
-        {
-            title: '강남점',
-            latlng: new daum.maps.LatLng(37.4970974,127.0272374),
-            imgSrc : '../img/marker.png',
-            imgSize : new daum.maps.Size(50,50),
-            imgPos : {offset: new kakao.maps.Point(123, 104)},
-            button : document.getElementById('branch1')
-        },
-        {
-            title: '종로점',
-            latlng: new daum.maps.LatLng(37.5725,126.99295),
-            imgSrc : '../img/marker.png',
-            imgSize : new daum.maps.Size(50,50),
-            imgPos : {offset: new kakao.maps.Point(200, 35)},
-            button : document.getElementById('branch2')
-        },
-        {
-            title: '이태원점',
-            latlng: new daum.maps.LatLng(37.5348737,126.996375),
-            imgSrc : '../img/marker.png',
-            imgSize : new daum.maps.Size(50,50),
-            imgPos : {offset: new kakao.maps.Point(123, 110)},
-            button : document.getElementById('branch3')
-        },
-        {
-            title: '영등포점',
-            latlng: new daum.maps.LatLng(37.51559327731903,126.90735570329154),
-            imgSrc : '../img/marker.png',
-            imgSize : new daum.maps.Size(50,50),
-            imgPos : {offset: new kakao.maps.Point(150, 134)},
-            button : document.getElementById('branch4')
-        },
-    ];
-
-    for(var i=0; i<markerOptions.length; i++){
-        new daum.maps.Marker({
-            map : map,
-            position : markerOptions[i].latlng,
-            title : markerOptions[i].title,
-            image : new daum.maps.MarkerImage(markerOptions[i].imgSrc, markerOptions[i].imgSize, markerOptions[i].imgPos)
-        });    
-
-        (function(index){
-            markerOptions[index].button.onclick = function(){
-                moveTo(markerOptions[index].latlng);
-                console.log(index);
-            }
-        })(i);        
-    }    
-
-    function moveTo(target){
-        var moveLatLan = target;
-        map.setCenter(moveLatLan);
-        return false;
-    }
-   
-    var mapTypeControl = new daum.maps.MapTypeControl();
-    map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
-
-    var zoomControl = new daum.maps.ZoomControl();
-    map.addControl(zoomControl, daum.maps.ControlPosition.BOTTOMRIGHT);
-
-
-    setDraggable(true);           
-    function setDraggable(draggable) {
-        map.setDraggable(draggable);    
-    }
-
-
-    setZoomable(false);
-    function setZoomable(zoomable) {          
-        map.setZoomable(zoomable);    
-    }
+    var map = $('.wrap iframe');
 
     btn.on('click', function(){
+        var gangnam = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.415516507119!2d127.0238732396322!3d37.49811691419097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15bd9bbb66d%3A0x84fd6455480862c1!2z7ISc7Jq47Yq567OE7IucIOyEnOy0iDTrj5kgR1Ttg4Dsm4w!5e0!3m2!1sko!2skr!4v1601221762862!5m2!1sko!2skr";
+
+        var jongro = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.3614749608314!2d126.99012857351669!3d37.57010499638426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDM0JzEyLjQiTiAxMjbCsDU5JzMwLjEiRQ!5e0!3m2!1sko!2skr!4v1601220802811!5m2!1sko!2skr";
+        
+        var itaewon = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.9295445450637!2d126.99164977600849!3d37.53481882187398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca24a3ebb8a29%3A0xf95059c3afd2fa8f!2z7Jeg7YyM7J207Ja0!5e0!3m2!1sko!2skr!4v1601222014507!5m2!1sko!2skr";
+
+        var yeongdeungpo = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.2890204047717!2d126.90803197600839!3d37.51786912235813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDMxJzA0LjMiTiAxMjbCsDU0JzMyLjkiRQ!5e0!3m2!1sko!2skr!4v1601222540831!5m2!1sko!2skr";
+
+        
+
         $(this).addClass('on').siblings().removeClass('on');
+        var loca = $(this).index();
+        console.log(loca);
+
+        if(loca == 1){
+            map.attr('src','');
+            map.attr('src', jongro);
+        } else if (loca == 2) {
+            map.attr('src','');
+            map.attr('src', itaewon);
+        } else if (loca == 3){
+            map.attr('src','');
+            map.attr('src', yeongdeungpo);
+        } else if (loca == 0) {
+            map.attr('src','');
+            map.attr('src', gangnam);
+        }
+
     });
 
-    /*
-    var t_on = document.getElementById('t_on');
-    var t_off = document.getElementById('t_off');
 
-    t_on.onclick = function(){
-        map.addOverlayMapTypeId(daum.maps.MapTypeId.TRAFFIC);
-        return false;
-    }
-    t_off.onclick = function(){
-        map.removeOverlayMapTypeId(daum.maps.MapTypeId.TRAFFIC); 
-        return false;
-    } 
-    */
-
-}
+});
