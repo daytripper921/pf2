@@ -12,7 +12,7 @@
                 width: 20%;box-sizing: border-box; float: left; height: 300px; position: relative;
     
                 p {font: 14px/1.4 'Titillium Web', sans-serif; position: absolute; left: 0; top: 16%; color: #222; opacity: 0; transform: translateY(-200px); transition: 0.5s; transition-delay: 0.4s;}
-                h1 {left: 0; top: 30%; position: absolute; font: bold 30px/1 'Titillium Web', sans-serif; color: #0062c4; opacity: 0; transform: translateX(-200px); transition: 0.5s;} 
+                h3 {left: 0; top: 30%; position: absolute; font: bold 30px/1 'Titillium Web', sans-serif; color: #0062c4; opacity: 0; transform: translateX(-200px); transition: 0.5s;} 
             }
     
             .right {
@@ -115,7 +115,7 @@
                 width: 20%;box-sizing: border-box; float: right; height: 300px; position: relative;
     
                 p {font: 14px/1.4 'Titillium Web', sans-serif; text-align: right; position: absolute; right: 0; top: 15%; color: #222; opacity: 0; transform: translateY(-200px); transition: 0.5s; transition-delay: 0.9s;}
-                h1 {right: 0; top: 30%; position: absolute; font: bold 30px/1 'Titillium Web', sans-serif; text-align: right; color: rgb(255, 167, 4); opacity: 0; transform: translateX(200px); transition: 0.5s; transition-delay: 0.5s;} 
+                h3 {right: 0; top: 30%; position: absolute; font: bold 30px/1 'Titillium Web', sans-serif; text-align: right; color: rgb(255, 167, 4); opacity: 0; transform: translateX(200px); transition: 0.5s; transition-delay: 0.5s;} 
             }
         }
 
@@ -126,7 +126,7 @@
             .box1 {
                 .left {
                     p {opacity: 1; transform:translateY(0);}
-                    h1 {opacity: 1; transform:translateX(0);}
+                    h3 {opacity: 1; transform:translateX(0);}
                 }
                 .right {opacity: 1; transform:translateX(0);}
             }
@@ -135,7 +135,7 @@
                 .left2 {opacity: 1; transform:translateX(0);}
                 .right2 {
                     p {opacity: 1; transform:translateY(0);}
-                    h1 {opacity: 1; transform:translateX(0);}
+                    h3 {opacity: 1; transform:translateX(0);}
                 }
             }
         }
@@ -155,7 +155,7 @@
                 .left{
                     width: 100%; float: none; height: auto; margin-bottom: 40px;
         
-                    h1 {position: static; margin-top: 10px; content:''; display: block; clear: both;} 
+                    h3 {position: static; margin-top: 10px; content:''; display: block; clear: both;} 
                     p {position: static;}
                 }
         
@@ -209,7 +209,7 @@
                 .right2 {
                     width: 100%; float: none; height: auto; margin-bottom: 40px;
                     p {position: static;}
-                    h1 {position: static; margin-top: 10px; content:''; display: block; clear: both;} 
+                    h3 {position: static; margin-top: 10px; content:''; display: block; clear: both;} 
                 }
             }
         }
@@ -256,7 +256,7 @@
                 .right2 {
                     width: 100%; float: none; height: auto; margin-bottom: 40px;
         
-                    h1 {position: static; margin-top: 20px;content:''; display: block; clear: both;} 
+                    h3 {position: static; margin-top: 20px;content:''; display: block; clear: both;} 
                 }
             }
         }

@@ -14,7 +14,7 @@
         width: 1180px; margin: 0 auto;  box-sizing: border-box;
         padding-top: 40vh;
 
-        h1 {font: bold 30px/1 'Titillium Web', sans-serif; color: rgb(41, 121, 87); margin-bottom: 50px; opacity: 0; transform: translateX(-200px); transition: 0.5s;}
+        h3 {font: bold 30px/1 'Titillium Web', sans-serif; color: rgb(41, 121, 87); margin-bottom: 50px; opacity: 0; transform: translateX(-200px); transition: 0.5s;}
 
         .wrap {
             width: 100%; 
@@ -89,7 +89,7 @@
             animation: rollDown2 1s ease-out forwards;
         }
         .inner {
-            h1 {opacity: 1; transform: translateX(0);}
+            h3 {opacity: 1; transform: translateX(0);}
         }
     }
 }
@@ -127,7 +127,7 @@
             width:90%; 
             padding-top: 250px;
     
-            h1 {font: bold 20px/1 'Titillium Web', sans-serif; margin-bottom: 50px;}
+            h3 {font: bold 20px/1 'Titillium Web', sans-serif; margin-bottom: 50px;}
     
             .wrap {position: relative;
                 article {

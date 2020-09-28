@@ -371,7 +371,7 @@ a {
     width: 1180px;
     margin: 0 auto;
     overflow: hidden; }
-    #part .inner h1 {
+    #part .inner h3 {
       font: bold 30px/1 'Titillium Web', sans-serif;
       color: #297957;
       margin-bottom: 50px;
@@ -442,7 +442,7 @@ a {
           background: url("../img/part3.jpg");
           background-size: cover;
           -webkit-filter: blur(1px) grayscale(0.8); }
-  #part.on .inner h1 {
+  #part.on .inner h3 {
     opacity: 1;
     transform: translateX(0); }
   #part.on .inner .wrap {
@@ -460,7 +460,7 @@ a {
     height: auto; }
     #part .inner {
       width: 90%; }
-      #part .inner h1 {
+      #part .inner h3 {
         font: bold 20px/1 'Titillium Web', sans-serif; }
       #part .inner .wrap li {
         width: calc(96% / 4);
@@ -510,7 +510,7 @@ a {
   #tab .inner {
     width: 1180px;
     margin: 0 auto; }
-    #tab .inner h1 {
+    #tab .inner > h3 {
       font: bold 30px/1 'Titillium Web', sans-serif;
       color: #297957;
       margin-bottom: 5px;
@@ -617,7 +617,7 @@ a {
           #tab .inner .wrap > div.on img {
             transform: translateX(0px);
             opacity: 1; }
-  #tab.on .inner h1 {
+  #tab.on .inner h3 {
     opacity: 1;
     transform: translateX(0); }
   #tab.on .inner span {
@@ -633,7 +633,7 @@ a {
     padding: 80px 0; }
     #tab .inner {
       width: 90%; }
-      #tab .inner h1 {
+      #tab .inner h3 {
         font-size: 20px; }
       #tab .inner span {
         font-size: 14px; }
@@ -752,7 +752,7 @@ a {
         transform: translateY(-200px);
         transition: 0.5s;
         transition-delay: 0.4s; }
-      #blue .inner .box1 .left h1 {
+      #blue .inner .box1 .left h3 {
         left: 0;
         top: 30%;
         position: absolute;
@@ -941,7 +941,7 @@ a {
           transform: translateY(-200px);
           transition: 0.5s;
           transition-delay: 0.9s; }
-        #blue .inner .box2 .right2 h1 {
+        #blue .inner .box2 .right2 h3 {
           right: 0;
           top: 30%;
           position: absolute;
@@ -955,7 +955,7 @@ a {
   #blue.on .inner .box1 .left p {
     opacity: 1;
     transform: translateY(0); }
-  #blue.on .inner .box1 .left h1 {
+  #blue.on .inner .box1 .left h3 {
     opacity: 1;
     transform: translateX(0); }
   #blue.on .inner .box1 .right {
@@ -967,7 +967,7 @@ a {
   #blue.on .inner .box2 .right2 p {
     opacity: 1;
     transform: translateY(0); }
-  #blue.on .inner .box2 .right2 h1 {
+  #blue.on .inner .box2 .right2 h3 {
     opacity: 1;
     transform: translateX(0); }
 
@@ -982,7 +982,7 @@ a {
         float: none;
         height: auto;
         margin-bottom: 40px; }
-        #blue .inner .box1 .left h1 {
+        #blue .inner .box1 .left h3 {
           position: static;
           margin-top: 10px;
           content: '';
@@ -1032,7 +1032,7 @@ a {
         margin-bottom: 40px; }
         #blue .inner .box2 .right2 p {
           position: static; }
-        #blue .inner .box2 .right2 h1 {
+        #blue .inner .box2 .right2 h3 {
           position: static;
           margin-top: 10px;
           content: '';
@@ -1062,7 +1062,7 @@ a {
     float: none;
     height: auto;
     margin-bottom: 40px; }
-    #blue .inner .box2 .right2 h1 {
+    #blue .inner .box2 .right2 h3 {
       position: static;
       margin-top: 20px;
       content: '';
@@ -1140,7 +1140,7 @@ a {
     width: 1180px;
     margin: 0 auto;
     overflow: hidden; }
-    #black .inner h1 {
+    #black .inner h3 {
       font: bold 30px/1 'Titillium Web', sans-serif;
       color: #333;
       margin-bottom: 50px;
@@ -1323,7 +1323,7 @@ a {
         #black .inner .wrap article:hover p {
           opacity: 1;
           z-index: 2; }
-  #black.on .inner h1 {
+  #black.on .inner h3 {
     opacity: 1;
     transform: translateX(0); }
   #black.on .inner .wrap article:nth-of-type(1) {
@@ -1351,7 +1351,7 @@ a {
     padding: 80px 0; }
     #black .inner {
       width: 90%; }
-      #black .inner h1 {
+      #black .inner h3 {
         font: bold 20px/1 'Titillium Web', sans-serif; }
       #black .inner .wrap article:nth-of-type(1) {
         width: 49%;
@@ -1425,7 +1425,7 @@ a {
     margin: 0 auto;
     box-sizing: border-box;
     padding-top: 40vh; }
-    #notice .inner h1 {
+    #notice .inner h3 {
       font: bold 30px/1 'Titillium Web', sans-serif;
       color: #297957;
       margin-bottom: 50px;
@@ -1513,7 +1513,7 @@ a {
               margin-bottom: 50px; }
   #notice.on::before {
     animation: rollDown2 1s ease-out forwards; }
-  #notice.on .inner h1 {
+  #notice.on .inner h3 {
     opacity: 1;
     transform: translateX(0); }
 
@@ -1536,7 +1536,7 @@ a {
   #notice .inner {
     width: 90%;
     padding-top: 250px; }
-    #notice .inner h1 {
+    #notice .inner h3 {
       font: bold 20px/1 'Titillium Web', sans-serif;
       margin-bottom: 50px; }
     #notice .inner .wrap {
@@ -1986,12 +1986,14 @@ a {
   .location .inner {
     width: 1180px;
     margin: 0 auto; }
-    .location .inner h1 {
+    .location .inner h3 {
       font: 600 30px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
       color: #297957; }
     .location .inner .wrap {
       width: 100%; }
+      .location .inner .wrap iframe {
+        width: 100%; }
       .location .inner .wrap #branch {
         margin-top: 20px;
         margin-bottom: 40px; }
@@ -2015,11 +2017,11 @@ a {
       .location .inner .wrap .detail dt {
         font: bold 15px/1 'Nanum Gothic', sans-serif;
         color: #20604f;
-        display: inline-block; }
+        margin-bottom: 5px; }
       .location .inner .wrap .detail dd {
-        display: inline-block;
         font: 14px/1 'Nanum Gothic', sans-serif;
-        color: rgba(29, 73, 61, 0.78); }
+        color: rgba(29, 73, 61, 0.78);
+        margin-bottom: 15px; }
 
 @media screen and (max-width: 1179px) {
   #location_visual {
@@ -2031,7 +2033,7 @@ a {
     padding: 100px 0; }
     .location .inner {
       width: 90%; }
-      .location .inner h1 {
+      .location .inner h3 {
         font-size: 30px;
         margin-bottom: 50px; }
       .location .inner .wrap {
@@ -2055,13 +2057,7 @@ a {
             .location .inner .wrap #branch li:hover {
               border-bottom: 2px solid #b0e9ca; }
             .location .inner .wrap #branch li.on {
-              border-bottom: 2px solid #37af6d; }
-        .location .inner .wrap .detail dt {
-          font: bold 14px/1 'Nanum Gothic', sans-serif;
-          display: inline-block; }
-        .location .inner .wrap .detail dd {
-          display: inline-block;
-          font: 14px/1 'Nanum Gothic', sans-serif; } }
+              border-bottom: 2px solid #37af6d; } }
 @media screen and (max-width: 639px) {
   #location_visual {
     height: 250px; }
@@ -2104,7 +2100,7 @@ textarea {
   .community .inner {
     width: 1180px;
     margin: 0 auto; }
-    .community .inner h1 {
+    .community .inner h3 {
       font: 600 30px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
       color: #297957; }
@@ -2220,6 +2216,8 @@ textarea {
     padding: 100px 0; }
     .community .inner {
       width: 90%; }
+      .community .inner h3 {
+        font-size: 28px; }
       .community .inner .searchBox input[type=text] {
         width: 35%; }
       .community .inner .searchBox input[type=submit] {
@@ -2336,7 +2334,7 @@ textarea {
   .join .inner {
     width: 1180px;
     margin: 0 auto; }
-    .join .inner h1 {
+    .join .inner h3 {
       font: 700 30px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
       color: #297957; }
@@ -2433,7 +2431,7 @@ textarea {
     padding: 100px 0; }
     .join .inner {
       width: 90%; }
-      .join .inner h1 {
+      .join .inner h3 {
         font-size: 28px; }
       .join .inner form fieldset table tr td input[type=text], .join .inner form fieldset table tr td input[type=password] {
         width: 50%; }
@@ -2608,7 +2606,7 @@ textarea {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
-    .gall_living .inner h1 {
+    .gall_living .inner h3 {
       font: 700 30px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
       color: #297957; }
@@ -2688,7 +2686,7 @@ textarea {
     padding: 100px 0; }
     .gall_living .inner {
       width: 90%; }
-      .gall_living .inner h1 {
+      .gall_living .inner h3 {
         font-size: 28px; }
       .gall_living .inner .wrap ul li {
         width: 33.33333%; } }
@@ -2714,7 +2712,7 @@ textarea {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
-    .gall_bed .inner h1 {
+    .gall_bed .inner h3 {
       font: 700 30px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
       color: #297957; }
@@ -2794,7 +2792,7 @@ textarea {
     padding: 100px 0; }
     .gall_bed .inner {
       width: 90%; }
-      .gall_bed .inner h1 {
+      .gall_bed .inner h3 {
         font-size: 28px; }
       .gall_bed .inner .wrap ul li {
         width: 33.33333%; } }
@@ -2820,7 +2818,7 @@ textarea {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
-    .gall_kitchen .inner h1 {
+    .gall_kitchen .inner h3 {
       font: 700 30px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
       color: #297957; }
@@ -2900,7 +2898,7 @@ textarea {
     padding: 100px 0; }
     .gall_kitchen .inner {
       width: 90%; }
-      .gall_kitchen .inner h1 {
+      .gall_kitchen .inner h3 {
         font-size: 28px; }
       .gall_kitchen .inner .wrap ul li {
         width: 33.33333%; } }
@@ -2926,7 +2924,7 @@ textarea {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
-    .gall_props .inner h1 {
+    .gall_props .inner h3 {
       font: 700 30px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
       color: #297957; }
@@ -3006,7 +3004,7 @@ textarea {
     padding: 100px 0; }
     .gall_props .inner {
       width: 90%; }
-      .gall_props .inner h1 {
+      .gall_props .inner h3 {
         font-size: 28px; }
       .gall_props .inner .wrap ul li {
         width: 33.33333%; } }
@@ -3043,7 +3041,7 @@ textarea {
   .aboutus .inner {
     width: 1180px;
     margin: 0 auto; }
-    .aboutus .inner h1 {
+    .aboutus .inner h3 {
       font: 700 35px/1 'Titillium Web', sans-serif;
       margin-bottom: 100px;
       color: #297957; }
@@ -3165,7 +3163,7 @@ textarea {
       top: 70%; }
     .aboutus .inner {
       width: 90%; }
-      .aboutus .inner h1 {
+      .aboutus .inner h3 {
         font: 700 30px/1 'Titillium Web', sans-serif;
         margin-bottom: 100px; }
       .aboutus .inner #value {

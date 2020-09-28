@@ -11,10 +11,14 @@
     .inner {
         width: 1180px; margin: 0 auto;
 
-        h1 {font: 600 30px/1 'Titillium Web', sans-serif; margin-bottom: 100px; color: rgb(41, 121, 87);}
+        h3 {font: 600 30px/1 'Titillium Web', sans-serif; margin-bottom: 100px; color: rgb(41, 121, 87);}
 
         .wrap {
             width: 100%;
+
+            iframe {
+                width: 100%;
+            }
 
             #branch {
                 margin-top:20px; margin-bottom: 40px;
@@ -35,8 +39,9 @@
             }
 
             .detail {
-                dt {font: bold 15px/1 'Nanum Gothic', sans-serif; color: #20604f; display: inline-block;}
-                dd {display: inline-block; font: 14px/1 'Nanum Gothic', sans-serif; color: rgba(29, 73, 61, 0.78)}
+                
+                dt {font: bold 15px/1 'Nanum Gothic', sans-serif; color: #20604f; margin-bottom: 5px;}
+                dd {font: 14px/1 'Nanum Gothic', sans-serif; color: rgba(29, 73, 61, 0.78); margin-bottom: 15px; } 
             }
         }
     }
@@ -57,7 +62,7 @@
         .inner {
             width: 90%; 
     
-            h1 {font-size: 30px; margin-bottom: 50px;}
+            h3 {font-size: 30px; margin-bottom: 50px;}
     
             .wrap {
                 width: 100%;
@@ -80,10 +85,6 @@
                     }
                 }
     
-                .detail {
-                    dt {font: bold 14px/1 'Nanum Gothic', sans-serif; display: inline-block;}
-                    dd {display: inline-block; font: 14px/1 'Nanum Gothic', sans-serif; }
-                }
             }
         }
     }
