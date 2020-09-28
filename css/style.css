@@ -1978,24 +1978,6 @@ a {
     position: relative;
     width: 100%;
     height: 100%; }
-    #location_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #location_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #location_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .location {
   width: 100%;
@@ -2044,15 +2026,6 @@ a {
     height: 300px; }
     #location_visual .inner {
       width: 90%; }
-      #location_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/1 'arial';
-        color: #fff;
-        padding-bottom: 5px; }
-      #location_visual .inner > div h1 {
-        font: bold 40px/1 'arial';
-        color: #fff;
-        margin-top: 20px; }
 
   .location {
     padding: 100px 0; }
@@ -2124,24 +2097,6 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%; }
-    #community_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #community_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #community_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .community {
   width: 100%;
@@ -2371,24 +2326,6 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%; }
-    #join_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #join_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #join_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .red {
   background: rgba(255, 118, 118, 0.63) !important; }
@@ -2567,24 +2504,6 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%; }
-    #login_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #login_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #login_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .login {
   width: 100%;
@@ -2681,24 +2600,6 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%; }
-    #gall_living_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #gall_living_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #gall_living_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .gall_living {
   width: 100%;
@@ -2805,24 +2706,6 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%; }
-    #gall_bed_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #gall_bed_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #gall_bed_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .gall_bed {
   width: 100%;
@@ -2929,24 +2812,6 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%; }
-    #gall_kitchen_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #gall_kitchen_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #gall_kitchen_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .gall_kitchen {
   width: 100%;
@@ -3053,24 +2918,6 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%; }
-    #gall_props_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #gall_props_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #gall_props_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .gall_props {
   width: 100%;
@@ -3178,24 +3025,6 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%; }
-    #aboutus_visual .inner > div {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -60%);
-      text-align: center; }
-      #aboutus_visual .inner > div span {
-        border-bottom: 2px solid #fff;
-        font: 16px/2 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        color: #fff;
-        padding-bottom: 5px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
-      #aboutus_visual .inner > div h1 {
-        font: bold 40px/1 'Titillium Web', sans-serif;
-        color: #fff;
-        margin-top: 20px;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
 
 .aboutus {
   width: 100%;
@@ -3399,5 +3228,34 @@ textarea {
           margin-right: 0%; }
         .aboutus .inner #partners .partners_inner .wrap article:nth-child(2n) {
           margin-right: 0; } }
+.subVisual .inner > div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center; }
+  .subVisual .inner > div span {
+    border-bottom: 2px solid #fff;
+    font: 18px/1 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-bottom: 5px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8); }
+  .subVisual .inner > div h1 {
+    font: 600 50px/1 'Titillium Web', sans-serif;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); }
+
+/* tablet */
+@media screen and (max-width: 1179px) {
+  .subVisual .inner > div h1 {
+    font-size: 40px; } }
+/* mobile */
+@media screen and (max-width: 639px) {
+  .subVisual .inner > div span {
+    line-height: 1.8; }
+  .subVisual .inner > div h1 {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -31,3 +31,29 @@ $mobile : 639px;
 @import 'sub/gall_kitchen';
 @import 'sub/gall_props';
 @import 'sub/aboutus';
+
+.subVisual {
+    .inner {
+        >div {
+            position: absolute; left: 50%; top: 50%; transform: translate(-50%, -60%); text-align: center;
+        
+            span {border-bottom: 2px solid #fff; font: 18px/1 'Open Sans', sans-serif; letter-spacing: 1px; color: #fff; padding-bottom: 5px; text-shadow: 0px 0px 5px rgba(0,0,0,0.8);}
+            h1 {font: 600 50px/1 'Titillium Web', sans-serif; color: #fff; margin-top: 20px;  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);}
+        }
+    }
+}
+
+
+/* tablet */
+@media screen and (max-width:$tablet){
+    .subVisual .inner >div {
+        h1 {font-size: 40px;}
+    }
+}
+/* mobile */
+@media screen and (max-width:$mobile){
+    .subVisual .inner >div {
+        span {line-height: 1.8;}
+        h1 {font-size: 40px;}
+    }
+}

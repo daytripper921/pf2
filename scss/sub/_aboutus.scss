@@ -3,12 +3,7 @@
     .inner {
         width: 1180px; margin: 0 auto; position: relative; width: 100%; height: 100%;
 
-        >div {
-            position: absolute; left: 50%; top: 50%; transform: translate(-50%, -60%);text-align: center;
-        
-            span {border-bottom: 2px solid #fff; font: 16px/2 'Open Sans', sans-serif; letter-spacing: 1px; color: #fff; padding-bottom: 5px; text-shadow: 0px 0px 5px rgba(0,0,0,0.8);}
-            h1 {font: bold 40px/1 'Titillium Web', sans-serif; color: #fff; margin-top: 20px;  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);}
-        }
+       
     }
 }
 
@@ -95,7 +90,6 @@
         height: 300px;
         .inner {
             width: 90%; 
-    
         }
     }
 
