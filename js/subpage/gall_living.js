@@ -4,7 +4,7 @@ $(document).ready(function(){
     let key = '673aecd9f0fe2c86bdcaa64b50aca0ca';
     let per_page = 20;
     let page_num = 1;
-    let tags = 'livingroom';
+    let tags = 'livingroom design';
 
     call_data(url_search, key, page_num, per_page, tags);
 
