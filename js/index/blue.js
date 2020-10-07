@@ -16,7 +16,7 @@ $(document).ready(function(){
         var wid = $(this).width();
 
         if(wid>=1180)doBanner(3);
-        if(wid>=639 && wid<1180) doBanner(2);
+        if(wid>=640 && wid<1180) doBanner(2);
         if(wid<639) doBanner(1);
     }
 
